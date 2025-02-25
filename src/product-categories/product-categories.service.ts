@@ -14,7 +14,7 @@ export class ProductCategoriesService {
   ) {}
 
   async create(createProductCategoryDto: CreateProductCategoryDto) {
-    return this.create({
+    return this.productCategoryModel.create({
       ...createProductCategoryDto,
     } as ProductCategory);
   }
