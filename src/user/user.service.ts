@@ -1,6 +1,9 @@
 import { Injectable, NotFoundException } from '@nestjs/common';
 import { InjectModel } from '@nestjs/sequelize';
 import * as bcrypt from 'bcrypt';
+import { Shop } from 'src/shop/shop.model';
+import { Admin } from 'src/admin/admin.model';
+import { Sale } from 'src/sale/sale.model';
 import * as jwt from 'jsonwebtoken';
 import { ConfigService } from 'src/common/config/config.service';
 import { CreateUserDto } from './dto/create-user.dto';
@@ -40,16 +43,23 @@ export class UserService {
   }
 
   async findAll() {
-    return this.userModel.findAll();
+    return this.userModel.findAll({
+      include: [{ model: Shop }, { model: Admin }, {model: Sale}],
+    });
   }
 
   async getMe(userId: number) {
-    const user = await this.userModel.findOne({ where: { id: userId } });
+    const user = await this.userModel.findOne({
+      where: { id: userId },
+      include: [{ model: Shop }, { model: Admin }, {model: Sale}],
+    });
     return user;
   }
 
   findOne(id: number) {
-    return this.userModel.findByPk(id);
+    return this.userModel.findByPk(id, {
+      include: [{ model: Shop }, { model: Admin }, {model: Sale}],
+    });
   }
 
   async update(id: number, updateUserDto: UpdateUserDto) {

@@ -35,6 +35,9 @@ import { AdminModule } from './admin/admin.module';
     CategoryModule,
     CashboxModule,
     AdminModule,
+    
   ],
+  
+
 })
 export class AppModule {}

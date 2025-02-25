@@ -11,6 +11,7 @@ import {
 import { ProductCategoriesService } from './product-categories.service';
 import { CreateProductCategoryDto } from './dto/create-product-category.dto';
 import { UpdateProductCategoryDto } from './dto/update-product-category.dto';
+import { Product } from 'src/product/product.model';
 
 @Controller('product-categories')
 export class ProductCategoriesController {

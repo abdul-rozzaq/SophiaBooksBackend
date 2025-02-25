@@ -1,4 +1,16 @@
-import { Column, DataType, Model, Table } from 'sequelize-typescript';
+import {
+  BelongsTo,
+  Column,
+  DataType,
+  ForeignKey,
+  HasMany,
+  Model,
+  Table,
+} from 'sequelize-typescript';
+import { Partiya } from 'src/partiya/partiya.model';
+import { ProductCategory } from 'src/product-categories/product-category.model';
+import { SaleItem } from 'src/sale-item/sale-item.model';
+import { Shop } from 'src/shop/shop.model';
 
 @Table({ tableName: 'product' })
 export class Product extends Model<Product> {
@@ -29,10 +41,11 @@ export class Product extends Model<Product> {
   @Column({
     type: DataType.STRING,
     allowNull: false,
-    defaultValue: '/uploads/default_product.jpg'
+    defaultValue: '/uploads/default_product.jpg',
   })
   product_image: string;
 
+  @ForeignKey(() => Shop)
   @Column({
     type: DataType.INTEGER,
     allowNull: false,
@@ -44,4 +57,16 @@ export class Product extends Model<Product> {
     allowNull: false,
   })
   low_quantity_alert: number;
+
+  @HasMany(() => Partiya)
+  partiya: Partiya[];
+
+  @BelongsTo(() => Shop)
+  shop: Shop;
+
+  @HasMany(() => ProductCategory)
+  productCategories: ProductCategory[];
+
+  @HasMany(() => SaleItem)
+  saleItems: SaleItem[];
 }
