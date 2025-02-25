@@ -37,7 +37,7 @@ export class UserService {
     if (user == null || !(await bcrypt.compare(password, user.password)))
       throw new NotFoundException({ message: 'User not found', status: 404 });
 
-    const accessToken = this.generateAccessToken({ id: user.id });
+    const accessToken = this.generateAccessToken({ id: user.id, role: user.role });
 
     return { accessToken, user, status: 200 };
   }
