@@ -1,19 +1,19 @@
 import { Injectable, NotFoundException } from '@nestjs/common';
-import { CreateUserDto } from './dto/create-user.dto';
-import { UpdateUserDto } from './dto/update-user.dto';
 import { InjectModel } from '@nestjs/sequelize';
-import { User } from './user.model';
-import { ConfigService } from 'src/common/config/config.service';
-import * as jwt from 'jsonwebtoken';
-import { LoginDto } from './dto/loginDto';
 import * as bcrypt from 'bcrypt';
+import * as jwt from 'jsonwebtoken';
+import { ConfigService } from 'src/common/config/config.service';
+import { CreateUserDto } from './dto/create-user.dto';
+import { LoginDto } from './dto/loginDto';
+import { UpdateUserDto } from './dto/update-user.dto';
+import { User } from './user.model';
 
 @Injectable()
 export class UserService {
   constructor(
     @InjectModel(User) private userModel: typeof User,
     private configService: ConfigService,
-  ) {}
+  ) { }
 
   async create(createUserDto: CreateUserDto) {
     const salt = await bcrypt.genSalt(10);
@@ -31,7 +31,7 @@ export class UserService {
     const { phone, password } = loginDto;
     const user = await this.userModel.findOne({ where: { phone } });
 
-    if (user == null || user.password != password)
+    if (user == null || !(await bcrypt.compare(password, user.password)))
       throw new NotFoundException({ message: 'User not found', status: 404 });
 
     const accessToken = this.generateAccessToken({ id: user.id });

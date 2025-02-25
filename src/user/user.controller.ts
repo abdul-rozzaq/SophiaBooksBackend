@@ -1,29 +1,28 @@
 import {
-  Controller,
-  Get,
-  Post,
   Body,
-  Patch,
-  Param,
+  Controller,
   Delete,
+  Get,
+  Param,
+  Post,
   Put,
   Req,
-  UseGuards,
-  UseInterceptors,
   UploadedFile,
+  UseGuards,
+  UseInterceptors
 } from '@nestjs/common';
-import { UserService } from './user.service';
-import { CreateUserDto } from './dto/create-user.dto';
-import { UpdateUserDto } from './dto/update-user.dto';
-import { LoginDto } from './dto/loginDto';
-import { AuthGuard } from 'src/common/auth/auth.guard';
 import { FileInterceptor } from '@nestjs/platform-express';
 import { diskStorage } from 'multer';
 import { extname } from 'path';
+import { AuthGuard } from 'src/common/auth/auth.guard';
+import { CreateUserDto } from './dto/create-user.dto';
+import { LoginDto } from './dto/loginDto';
+import { UpdateUserDto } from './dto/update-user.dto';
+import { UserService } from './user.service';
 
 @Controller('user')
 export class UserController {
-  constructor(private readonly userService: UserService) {}
+  constructor(private readonly userService: UserService) { }
 
   @Post('register')
   create(@Body() createUserDto: CreateUserDto) {
@@ -40,6 +39,7 @@ export class UserController {
     return this.userService.findAll();
   }
 
+  @UseGuards(AuthGuard)
   @Get('me')
   async getMe(@Req() req) {
     const userId = req.user.id;

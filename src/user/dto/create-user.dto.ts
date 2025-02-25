@@ -1,4 +1,5 @@
-import { IsNotEmpty, IsString } from 'class-validator';
+import { IsNotEmpty, IsString, Validate } from 'class-validator';
+import { IsPhoneUnique } from '../validators/is-phone-unique.validator';
 
 export class CreateUserDto {
   @IsString()
@@ -10,8 +11,10 @@ export class CreateUserDto {
   second_name: string;
 
   @IsString()
-  @IsNotEmpty()
+  @IsNotEmpty({ message: 'Telefon raqam kiritilishi shart' })
+  @Validate(IsPhoneUnique, { message: 'Bu telefon raqami allaqachon mavjud!' })
   phone: string;
+
 
   @IsString()
   @IsNotEmpty()
