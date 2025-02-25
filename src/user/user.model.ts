@@ -33,4 +33,11 @@ export class User extends Model<User> {
     defaultValue: '/uploads/default_image.png',
   })
   profile_image: string;
+
+  @Column({
+    type: DataType.STRING,
+    allowNull: false,
+    defaultValue: 'user',
+  })
+  role: string;
 }
