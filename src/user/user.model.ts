@@ -20,6 +20,7 @@ export class User extends Model<User> {
   @Column({
     type: DataType.STRING,
     allowNull: false,
+    unique: true,
   })
   phone: string;
 
@@ -44,4 +45,10 @@ export class User extends Model<User> {
 
   @HasMany(() => Sale)
   sales: Sale[];
+  @Column({
+    type: DataType.STRING,
+    allowNull: false,
+    defaultValue: 'user',
+  })
+  role: string;
 }
