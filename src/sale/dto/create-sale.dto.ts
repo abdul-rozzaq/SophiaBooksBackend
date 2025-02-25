@@ -15,5 +15,5 @@ export class CreateSaleDto {
 
   @IsNumber()
   @IsNotEmpty()
-  cashier_id: number;
+  cashbox_id: number;
 }

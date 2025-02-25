@@ -3,6 +3,10 @@ import { CreateProductDto } from './dto/create-product.dto';
 import { UpdateProductDto } from './dto/update-product.dto';
 import { InjectModel } from '@nestjs/sequelize';
 import { Product } from './product.model';
+import { Partiya } from 'src/partiya/partiya.model';
+import { Shop } from 'src/shop/shop.model';
+import { ProductCategory } from 'src/product-categories/product-category.model';
+import { SaleItem } from 'src/sale-item/sale-item.model';
 
 @Injectable()
 export class ProductService {
@@ -19,11 +23,25 @@ export class ProductService {
   }
 
   findAll() {
-    return this.productModel.findAll();
+    return this.productModel.findAll({
+      include: [
+        { model: Partiya },
+        { model: Shop },
+        { model: ProductCategory },
+        { model: SaleItem },
+      ],
+    });
   }
 
   findOne(id: number) {
-    return this.productModel.findByPk(id);
+    return this.productModel.findByPk(id, {
+      include: [
+        { model: Partiya },
+        { model: Shop },
+        { model: ProductCategory },
+        { model: SaleItem },
+      ],
+    });
   }
 
   async update(id: number, updateProductDto: UpdateProductDto) {

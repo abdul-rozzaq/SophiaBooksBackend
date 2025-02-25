@@ -3,6 +3,8 @@ import { InjectModel } from '@nestjs/sequelize';
 import { Admin } from './admin.model';
 import { CreateAdminDto } from './dto/create-admin.dto';
 import { UpdateAdminDto } from './dto/update-admin.dto';
+import { User } from 'src/user/user.model';
+import { Shop } from 'src/shop/shop.model';
 
 @Injectable()
 export class AdminService {
@@ -17,11 +19,15 @@ export class AdminService {
   }
 
   async findAll() {
-    return await this.adminModel.findAll();
+    return await this.adminModel.findAll({
+      include: [{ model: User }, { model: Shop }],
+    });
   }
 
   async findOne(id: number) {
-    return await this.adminModel.findByPk(id);
+    return await this.adminModel.findByPk(id, {
+      include: [{ model: User }, { model: Shop }],
+    });
   }
 
   async update(id: number, updateAdminDto: UpdateAdminDto) {

@@ -3,6 +3,8 @@ import { CreateSalePartDto } from './dto/create-sale-part.dto';
 import { UpdateSalePartDto } from './dto/update-sale-part.dto';
 import { InjectModel } from '@nestjs/sequelize';
 import { SaleParts } from './sale-parts.model';
+import { Partiya } from 'src/partiya/partiya.model';
+import { SaleItem } from 'src/sale-item/sale-item.model';
 
 @Injectable()
 export class SalePartsService {
@@ -21,11 +23,15 @@ export class SalePartsService {
   }
 
   findAll() {
-    return this.salePartModel.findAll();
+    return this.salePartModel.findAll({
+      include: [{ model: Partiya }, { model: SaleItem }],
+    });
   }
 
   findOne(id: number) {
-    return this.salePartModel.findByPk(id);
+    return this.salePartModel.findByPk(id, {
+      include: [{ model: Partiya }, { model: SaleItem }],
+    });
   }
 
   async update(id: number, updateSalePartDto: UpdateSalePartDto) {

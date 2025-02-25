@@ -18,7 +18,7 @@ export const getDatabaseConfig = (): SequelizeModuleOptions => {
             database: process.env.DBNAME || 'sophiabooks',
             autoLoadModels: true,
             synchronize: true,
-            // sync: { alter: true }, 
+            // sync: { force: true }, 
         }
     } else {
         return {

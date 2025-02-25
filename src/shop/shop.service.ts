@@ -3,22 +3,39 @@ import { InjectModel } from '@nestjs/sequelize';
 import { CreateShopDto } from './dto/create-shop.dto';
 import { UpdateShopDto } from './dto/update-shop.dto';
 import { Shop } from './shop.model';
+import { Cashbox } from 'src/cashbox/cashbox.model';
+import { User } from 'src/user/user.model';
+import { Admin } from 'src/admin/admin.model';
+import { Product } from 'src/product/product.model';
 
 @Injectable()
 export class ShopService {
-
-  constructor(@InjectModel(Shop) private shopModel: typeof Shop) { }
+  constructor(@InjectModel(Shop) private shopModel: typeof Shop) {}
 
   async create(createShopDto: CreateShopDto) {
     return await this.shopModel.create({ ...createShopDto });
   }
 
   async findAll() {
-    return await this.shopModel.findAll();
+    return await this.shopModel.findAll({
+      include: [
+        { model: Cashbox },
+        { model: User },
+        { model: Admin },
+        { model: Product },
+      ],
+    });
   }
 
   async findOne(id: number) {
-    return await this.shopModel.findByPk(id);
+    return await this.shopModel.findByPk(id, {
+      include: [
+        { model: Cashbox },
+        { model: User },
+        { model: Admin },
+        { model: Product },
+      ],
+    });
   }
 
   async update(id: number, updateShopDto: UpdateShopDto) {

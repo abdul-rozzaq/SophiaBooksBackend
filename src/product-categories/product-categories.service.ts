@@ -3,6 +3,8 @@ import { CreateProductCategoryDto } from './dto/create-product-category.dto';
 import { UpdateProductCategoryDto } from './dto/update-product-category.dto';
 import { InjectModel } from '@nestjs/sequelize';
 import { ProductCategory } from './product-category.model';
+import { Product } from 'src/product/product.model';
+import { Category } from 'src/category/category.model';
 
 @Injectable()
 export class ProductCategoriesService {
@@ -24,11 +26,15 @@ export class ProductCategoriesService {
   }
 
   findAll() {
-    return this.productCategoryModel.findAll();
+    return this.productCategoryModel.findAll({
+      include: [{ model: Product }, { model: Category }],
+    });
   }
 
   findOne(id: number) {
-    return this.productCategoryModel.findByPk(id);
+    return this.productCategoryModel.findByPk(id, {
+      include: [{ model: Product }, { model: Category }],
+    });
   }
 
   async update(id: number, updateProductCategoryDto: UpdateProductCategoryDto) {
