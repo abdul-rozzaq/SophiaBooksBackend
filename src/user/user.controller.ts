@@ -36,6 +36,8 @@ export class UserController {
     return this.userService.login(createUserDto);
   }
 
+  @Roles('admin')
+  @UseGuards(RoleGuard)
   @Get()
   findAll() {
     return this.userService.findAll();

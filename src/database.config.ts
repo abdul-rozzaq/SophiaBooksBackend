@@ -26,7 +26,7 @@ export const getDatabaseConfig = (): SequelizeModuleOptions => {
             storage: '.db/db.sqlite3',
             autoLoadModels: true,
             synchronize: true,
-            sync: { force: true },
+            // sync: { force: true },
         };
     }
 }
