@@ -15,6 +15,8 @@ import { FileInterceptor } from '@nestjs/platform-express';
 import { diskStorage } from 'multer';
 import { extname } from 'path';
 import { AuthGuard } from 'src/common/auth/auth.guard';
+import { Roles } from 'src/common/auth/role.decorator';
+import { RoleGuard } from 'src/common/auth/role.guard';
 import { CreateUserDto } from './dto/create-user.dto';
 import { LoginDto } from './dto/loginDto';
 import { UpdateUserDto } from './dto/update-user.dto';
