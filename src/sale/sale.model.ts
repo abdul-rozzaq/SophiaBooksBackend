@@ -9,13 +9,13 @@ export class Sale extends Model<Sale> {
   admin_id: number;
 
   @Column({
-    type: DataType.ENUM,
+    type: DataType.ENUM('cash', 'card'),
     allowNull: false,
   })
-  payment_method: 'cash' | 'card';
+  payment_method: string;
 
   @Column({
-    type: DataType.STRING,
+    type: DataType.ENUM('completed', 'canceled'),
     allowNull: false,
   })
   status: string;

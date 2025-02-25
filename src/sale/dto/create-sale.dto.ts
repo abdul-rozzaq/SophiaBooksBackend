@@ -5,9 +5,9 @@ export class CreateSaleDto {
   @IsNotEmpty()
   admin_id: number;
 
-  @IsEnum(['card', 'cash'])
+  @IsString()
   @IsNotEmpty()
-  payment_method: 'card' | 'cash';
+  payment_method: string;
 
   @IsString()
   @IsNotEmpty()

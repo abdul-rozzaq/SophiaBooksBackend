@@ -29,6 +29,7 @@ export class Product extends Model<Product> {
   @Column({
     type: DataType.STRING,
     allowNull: false,
+    defaultValue: '/uploads/default_product.jpg'
   })
   product_image: string;
 

@@ -9,7 +9,7 @@ export class CreateProductDto {
   @IsNotEmpty()
   description: string;
 
-  @IsNumber()
+  // @IsNumber()
   @IsNotEmpty()
   retail_price: number;
 
@@ -19,11 +19,11 @@ export class CreateProductDto {
 
   product_image: string;
 
-  @IsNumber()
+  // @IsNumber()
   @IsNotEmpty()
   shop_id: number;
 
-  @IsString()
+  // @IsNumber()
   @IsNotEmpty()
   low_quantity_alert: number;
 }

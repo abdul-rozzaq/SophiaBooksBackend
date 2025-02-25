@@ -12,6 +12,9 @@ import { SalePartsModule } from './sale-parts/sale-parts.module';
 import { PartiyaModule } from './partiya/partiya.module';
 import { ProductModule } from './product/product.module';
 import { ProductCategoriesModule } from './product-categories/product-categories.module';
+import { CategoryModule } from './category/category.module';
+import { CashboxModule } from './cashbox/cashbox.module';
+import { AdminModule } from './admin/admin.module';
 
 @Module({
   imports: [
@@ -29,6 +32,9 @@ import { ProductCategoriesModule } from './product-categories/product-categories
     PartiyaModule,
     ProductModule,
     ProductCategoriesModule,
+    CategoryModule,
+    CashboxModule,
+    AdminModule,
   ],
 })
 export class AppModule {}
