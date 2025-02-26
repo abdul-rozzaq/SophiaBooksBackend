@@ -26,9 +26,11 @@ export class UserService {
     return user;
   }
 
-  createMany(createUserDto: CreateUserDto[]) {
-    return this.userModel.bulkCreate({ ...createUserDto } as User[]);
+  async createMany(createUserDto: CreateUserDto[]) {
+    return await this.userModel.bulkCreate(createUserDto as unknown as User[]);
   }
+  
+  
 
   async login(loginDto: LoginDto) {
     const { phone, password } = loginDto;
