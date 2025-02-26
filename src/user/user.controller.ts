@@ -36,6 +36,11 @@ export class UserController {
     return this.userService.login(createUserDto);
   }
 
+  @Post('create-many')
+  createMany(@Body() createUserDto: CreateUserDto[]){
+    return this.userService.createMany(createUserDto)
+  }
+
   @Roles('admin')
   @UseGuards(RoleGuard)
   @Get()
