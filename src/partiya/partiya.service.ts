@@ -1,21 +1,21 @@
 import { Injectable } from '@nestjs/common';
-import { CreatePartiyaDto } from './dto/create-partiya.dto';
-import { UpdatePartiyaDto } from './dto/update-partiya.dto';
 import { InjectModel } from '@nestjs/sequelize';
-import { Partiya } from './partiya.model';
 import { Product } from 'src/product/product.model';
 import { SaleParts } from 'src/sale-parts/sale-parts.model';
+import { CreatePartiyaDto } from './dto/create-partiya.dto';
+import { UpdatePartiyaDto } from './dto/update-partiya.dto';
+import { Partiya } from './partiya.model';
 
 @Injectable()
 export class PartiyaService {
-  constructor(@InjectModel(Partiya) private partiyaModel: typeof Partiya) {}
+  constructor(@InjectModel(Partiya) private partiyaModel: typeof Partiya) { }
 
   async create(createPartiyaDto: CreatePartiyaDto) {
     return await this.partiyaModel.create({ ...createPartiyaDto } as Partiya);
   }
 
   async createMany(createPartiyaDto: CreatePartiyaDto[]) {
-    return this.partiyaModel.bulkCreate({ ...createPartiyaDto } as Partiya[]);
+    return this.partiyaModel.bulkCreate(createPartiyaDto as unknown as Partiya[]);
   }
 
   findAll() {
