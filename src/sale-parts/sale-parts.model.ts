@@ -24,7 +24,7 @@ export class SaleParts extends Model<SaleParts> {
     type: DataType.INTEGER,
     allowNull: false,
   })
-  saleItem_id: number;
+  sale_item_id: number;
 
   @Column({
     type: DataType.INTEGER,

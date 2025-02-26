@@ -7,7 +7,7 @@ export class CreateSalePartDto {
 
   @IsNumber()
   @IsNotEmpty()
-  saleItem_id: number;
+  sale_item_id: number;
 
   @IsNumber()
   @IsNotEmpty()
