@@ -17,7 +17,7 @@ export class SaleService {
   }
 
   async createMany(createSaleDto: CreateSaleDto[]) {
-    return this.saleModel.bulkCreate({ ...createSaleDto } as Sale[]);
+    return this.saleModel.bulkCreate(createSaleDto as unknown as Sale[]);
   }
 
   findAll() {
