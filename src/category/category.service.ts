@@ -16,9 +16,7 @@ export class CategoryService {
   }
 
   async createMany(createCategoryDto: CreateCategoryDto[]) {
-    return this.categoryModel.bulkCreate({
-      ...createCategoryDto,
-    } as Category[]);
+    return this.categoryModel.bulkCreate(createCategoryDto as unknown as Category[]);
   }
 
   findAll() {
