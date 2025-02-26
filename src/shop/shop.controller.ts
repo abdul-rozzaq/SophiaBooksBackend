@@ -12,6 +12,11 @@ export class ShopController {
     return this.shopService.create(createShopDto);
   }
 
+  @Post('create-many')
+  createMany(@Body() createShopDto: CreateShopDto[]){
+    return this.shopService.createMany(createShopDto)
+  }
+
   @Get()
   findAll() {
     return this.shopService.findAll();

@@ -16,6 +16,10 @@ export class ShopService {
     return await this.shopModel.create({ ...createShopDto });
   }
 
+  async createMany(createShopDto: CreateShopDto[]) {
+    return await this.shopModel.bulkCreate(createShopDto as Partial<Shop>[]);
+  }
+
   async findAll() {
     return await this.shopModel.findAll({
       include: [
