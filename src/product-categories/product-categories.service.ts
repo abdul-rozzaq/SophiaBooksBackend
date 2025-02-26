@@ -20,9 +20,9 @@ export class ProductCategoriesService {
   }
 
   async createMany(createProductCategoryDto: CreateProductCategoryDto[]) {
-    return this.productCategoryModel.bulkCreate({
-      ...createProductCategoryDto,
-    } as ProductCategory[]);
+    return this.productCategoryModel.bulkCreate(
+      createProductCategoryDto as unknown as ProductCategory[],
+    );
   }
 
   findAll() {
