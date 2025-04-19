@@ -1,0 +1,51 @@
+{
+    "statistics": {
+        "total_products_count": 1352,
+        "total_measurement_value": 2441,
+        "total_retail_price": 110167000,
+        "total_supply_price": 83732964,
+        "total_prices_by_currency": [
+            {
+                "currency": "UZS",
+                "total_retail_price": 110167000,
+                "total_supply_price": 83732964
+            }
+        ],
+        "total_products_scalable_count": 0
+    },
+    "statistics_by_status": {
+        "total_measurement_value": 2441,
+        "total_active_measurement_value": 2441,
+        "total_inactive_measurement_value": 0,
+        "measurement_value": {
+            "total": 2441,
+            "measurement_units": [
+                {
+                    "measurement_unit": "шт",
+                    "measurement_value": 2441
+                }
+            ]
+        },
+        "active_measurement_value": {
+            "total": 2441,
+            "measurement_units": [
+                {
+                    "measurement_unit": "шт",
+                    "measurement_value": 2441
+                }
+            ]
+        },
+        "inactive_measurement_value": {
+            "total": 0,
+            "measurement_units": [
+                {
+                    "measurement_unit": "шт",
+                    "measurement_value": 0
+                }
+            ]
+        },
+        "small_left_count": 0,
+        "zero_left_count": 446,
+        "count": 1352
+    }
+}

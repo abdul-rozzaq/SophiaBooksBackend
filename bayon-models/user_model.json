@@ -1,0 +1,48 @@
+{
+    "id": "98905921-7c6e-45c1-b5c9-ee35b28e726a",
+    "external_id": 0,
+    "company_id": "31e5ad2c-e6ca-469c-ad4d-97a5c2c7e7e4",
+    "phone_number": "+998884160412",
+    "first_name": "Xursanali",
+    "last_name": "Sirojiddinov",
+    "birth_date": "",
+    "gender": "female",
+    "can_login_from_mobile_app": false,
+    "can_login_from_multiple_devices": false,
+    "num_of_devices": 0,
+    "status_id": "75af5991-a4a3-4bea-b2a7-1306e22d6529",
+    "password": "",
+    "is_active": true,
+    "image": "",
+    "image_url": "",
+    "is_image_avatar": false,
+    "language": "",
+    "theme": "",
+    "current_cashbox_id": "",
+    "current_shop_id": "7bede3e8-685a-4cc4-885d-c17274ed87b1",
+    "cashboxes": [],
+    "shops": [
+        {
+            "id": "82798a10-09ee-423c-85bd-b546dd87a7c0",
+            "shop_id": "7bede3e8-685a-4cc4-885d-c17274ed87b1",
+            "shop": {
+                "name": "Bayon kitoblari"
+            }
+        }
+    ],
+    "roles": [
+        {
+            "id": "acbc46c1-f052-419c-b355-a634d667a361",
+            "role_id": "ae7d7bd6-77e8-431f-8c96-64a34c293de3",
+            "role": {
+                "name": "Кассир"
+            }
+        }
+    ],
+    "created_at": "2025-02-11 14:36:23",
+    "updated_at": "2025-02-11 14:45:50",
+    "deleted_at": 0,
+    "telegram_id": 0,
+    "props_updated": false,
+    "type": 1
+}

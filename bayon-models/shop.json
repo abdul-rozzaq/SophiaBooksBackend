@@ -1,0 +1,35 @@
+{
+    "id": "7bede3e8-685a-4cc4-885d-c17274ed87b1",
+    "company_id": "31e5ad2c-e6ca-469c-ad4d-97a5c2c7e7e4",
+    "name": "Bayon kitoblari",
+    "cheque_id": "e9d28739-2851-46c4-a2a1-9837f11acbdf",
+    "quadrature": 0,
+    "phone_numbers": [
+        "+998770560770"
+    ],
+    "facebook": "",
+    "instagram": "bayonbooks",
+    "telegram": "bayonbooks",
+    "website": "",
+    "has_unique_details": false,
+    "working_hours": null,
+    "legal_name": "",
+    "address": "",
+    "legal_country_id": "",
+    "postcode": "",
+    "bank_accounts": [],
+    "cash_boxes": [
+        {
+            "id": "913cfc75-9ce0-47a7-9983-1145021fc680",
+            "name": "Cashbox Bayon",
+            "is_active": true,
+            "e_pos": 0,
+            "web_kassa": 0
+        }
+    ],
+    "cash_boxes_count": 1,
+    "color": "#761954",
+    "nds": "",
+    "inn": "",
+    "company_inn": ""
+}

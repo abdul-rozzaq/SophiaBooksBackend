@@ -1,4 +1,4 @@
-import { Module } from '@nestjs/common';
+import { MiddlewareConsumer, Module, NestModule } from '@nestjs/common';
 import { SequelizeModule } from '@nestjs/sequelize';
 import { getDatabaseConfig } from './database.config';
 import { ShopModule } from './shop/shop.module';
@@ -15,6 +15,7 @@ import { ProductCategoriesModule } from './product-categories/product-categories
 import { CategoryModule } from './category/category.module';
 import { CashboxModule } from './cashbox/cashbox.module';
 import { AdminModule } from './admin/admin.module';
+import { SubdomainMiddleware } from './common/middlewares/subdomain.middleware';
 
 @Module({
   imports: [
@@ -40,4 +41,8 @@ import { AdminModule } from './admin/admin.module';
   
 
 })
-export class AppModule {}
+export class AppModule implements NestModule {
+  configure(consumer: MiddlewareConsumer) {
+    consumer.apply(SubdomainMiddleware).forRoutes('*'); // Barcha yo‘nalishlarga middleware qo‘shish
+  }
+}

@@ -1,0 +1,13 @@
+{
+    "id": "f321bbd7-af6c-417f-8e2f-18f3842c24bb",
+    "company_id": "346c6ae2-909b-4a9e-ada1-2ed97cc3fc45",
+    "currency": {
+        "id": "925d8f76-70f8-4a4c-ada8-0e61a906b56e",
+        "name": "So'm",
+        "symbol": "so'm",
+        "iso_code": "UZS",
+        "exchange_rate": 1,
+        "precision": 0
+    },
+    "is_editable": false
+}

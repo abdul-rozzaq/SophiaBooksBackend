@@ -1,0 +1,2246 @@
+{
+    "sections": [
+        {
+            "id": "0626b5bf-a61a-4236-b838-f56414aa56f2",
+            "key": "products",
+            "sequence_number": 0,
+            "permissions": [
+                {
+                    "id": "1a77751f-6c16-4566-8bd0-953e3647f82e",
+                    "parent_id": "",
+                    "section_id": "",
+                    "name": "Поставщики",
+                    "route": "products/suppliers",
+                    "description": "",
+                    "sequence_number": 0,
+                    "children": [
+                        {
+                            "id": "57c8c603-218e-4512-a05e-95ed3f446b53",
+                            "parent_id": "",
+                            "name": "Возможность редактирования поставщиков",
+                            "route": "products/suppliers/update/{:id}",
+                            "description": "Возможность редактирования поставщиков",
+                            "is_active": false,
+                            "slug": "supplier-edit"
+                        },
+                        {
+                            "id": "055648ec-fc43-4a88-8fdd-440bb252c72e",
+                            "parent_id": "",
+                            "name": "Возможность просмотра списка поставщиков",
+                            "route": "products/suppliers",
+                            "description": "Возможность просмотра списка поставщиков",
+                            "is_active": false,
+                            "slug": "supplier-list"
+                        },
+                        {
+                            "id": "e0aa19c3-a70b-4473-87a6-3832b4e41d21",
+                            "parent_id": "",
+                            "name": "Возможность создания новых поставщиков",
+                            "route": "products/suppliers/create",
+                            "description": "Возможность создания новых поставщиков",
+                            "is_active": false,
+                            "slug": "supplier-create"
+                        }
+                    ],
+                    "is_active": false,
+                    "slug": "suppliers"
+                },
+                {
+                    "id": "ca32a386-b5f9-4e1c-b970-1f5cb1b9f51a",
+                    "parent_id": "",
+                    "section_id": "",
+                    "name": "Переоценка",
+                    "route": "products/revaluation",
+                    "description": "",
+                    "sequence_number": 0,
+                    "children": [
+                        {
+                            "id": "345e98b5-e8ce-4316-9572-e598d3a901ee",
+                            "parent_id": "",
+                            "name": "Возможность одобрения переоценки",
+                            "route": "/products/revaluation/view/{:id}",
+                            "description": "Возможность одобрения переоценки",
+                            "is_active": false,
+                            "slug": "revaluation-accept"
+                        },
+                        {
+                            "id": "0dfc88bd-3724-4e5b-9a95-7ed04c2374dd",
+                            "parent_id": "",
+                            "name": "Возможность создания переоценки по курсу, марже и цене",
+                            "route": "products/revaluation/create/:id",
+                            "description": "Возможность создания переоценки по курсу, марже и цене",
+                            "is_active": false,
+                            "slug": "revaluation-create"
+                        },
+                        {
+                            "id": "26962e98-41cd-4a2f-b123-9c0cb962a5bb",
+                            "parent_id": "",
+                            "name": "Возможность переоценки по файлу",
+                            "route": "products/revaluation/file",
+                            "description": "Возможность переоценки по файлу",
+                            "is_active": false,
+                            "slug": "revaluation-file"
+                        },
+                        {
+                            "id": "3080e176-3399-4749-a37e-1e5b89637d28",
+                            "parent_id": "",
+                            "name": "Возможность просмотра процесса переоценок",
+                            "route": "products/revaluation",
+                            "description": "Возможность просмотра процесса переоценок",
+                            "is_active": false,
+                            "slug": "product-revaluation"
+                        }
+                    ],
+                    "is_active": false,
+                    "slug": "revaluation"
+                },
+                {
+                    "id": "f4e01baf-3f42-46e7-9143-cc88a65d2521",
+                    "parent_id": "",
+                    "section_id": "",
+                    "name": "Списание",
+                    "route": "products/write-off",
+                    "description": "",
+                    "sequence_number": 0,
+                    "children": [
+                        {
+                            "id": "89e9ab5f-496b-4e88-8a8a-9ea60e59f7d2",
+                            "parent_id": "",
+                            "name": "Возможность просмотра себестоимости списаний",
+                            "route": "products/write-off/completed/?amount=0",
+                            "description": "Возможность просмотра себестоимости списаний",
+                            "is_active": false,
+                            "slug": "write-off-cost"
+                        },
+                        {
+                            "id": "a33ce177-dc42-43a2-a5db-6c6c2d13084d",
+                            "parent_id": "",
+                            "name": "Возможность удаления процесса списаний",
+                            "route": "products/write-off/cancel",
+                            "description": "Возможность удаления процесса списаний",
+                            "is_active": false,
+                            "slug": "write-off-delete"
+                        },
+                        {
+                            "id": "3d7a3e9c-bdab-42fd-9292-500fa501eee6",
+                            "parent_id": "",
+                            "name": "Возможность просмотра списка списаний",
+                            "route": "products/write-off",
+                            "description": "Возможность просмотра списка списаний",
+                            "is_active": false,
+                            "slug": "write-offs"
+                        },
+                        {
+                            "id": "61dcb752-551b-4aad-bd3a-f405b7a6798e",
+                            "parent_id": "",
+                            "name": "Возможность создания списания",
+                            "route": "products/write-off/create/:id",
+                            "description": "Возможность создания списания",
+                            "is_active": false,
+                            "slug": "write-off-create"
+                        },
+                        {
+                            "id": "cc280a6e-1882-41ef-a7ec-6d3d86674aa0",
+                            "parent_id": "",
+                            "name": "Возможность завершения списаний",
+                            "route": "products/write-off/finish/:id",
+                            "description": "Возможность завершения списаний",
+                            "is_active": false,
+                            "slug": "write-off-finish"
+                        }
+                    ],
+                    "is_active": false,
+                    "slug": "write-off"
+                },
+                {
+                    "id": "2055a122-2b20-4479-b3c6-e0b4f38c1c4d",
+                    "parent_id": "",
+                    "section_id": "",
+                    "name": "Импорт",
+                    "route": "products/import",
+                    "description": "Тултип, объясняющий что делает cоздание товара, услуги, комплекта",
+                    "sequence_number": 0,
+                    "children": [
+                        {
+                            "id": "90440f85-478d-4cdb-bf0f-c94ce03ccc15",
+                            "parent_id": "",
+                            "name": "Возможность удаления импортов",
+                            "route": "products/import/delete/:id",
+                            "description": "Возможность удаления импортов",
+                            "is_active": false,
+                            "slug": "import-delete"
+                        },
+                        {
+                            "id": "556a46e0-42bd-40bf-83e5-984c55c41260",
+                            "parent_id": "",
+                            "name": "Просмотр процессов импорта",
+                            "route": "products/import",
+                            "description": "Просмотр процессов импорта",
+                            "is_active": false,
+                            "slug": "import-details"
+                        },
+                        {
+                            "id": "5b5bdc2c-873b-41ce-90fa-95e92cdd9d41",
+                            "parent_id": "",
+                            "name": "Просмотр суммы продажи импортов",
+                            "route": "products/import/list/?retail_price=0",
+                            "description": "Просмотр суммы продажи импортов",
+                            "is_active": false,
+                            "slug": "import-retail-price"
+                        },
+                        {
+                            "id": "4df2200c-eb8b-4399-aa6b-24c184ce122b",
+                            "parent_id": "",
+                            "name": "Возможность проверки и загрузки импортов",
+                            "route": "products/import/edit-access/:id",
+                            "description": "",
+                            "is_active": false,
+                            "slug": "import-check"
+                        },
+                        {
+                            "id": "9eca2438-fa7f-40d7-beb7-a7307606b656",
+                            "parent_id": "",
+                            "name": "Просмотр суммы поставки импортов",
+                            "route": "products/import/list/?price=0",
+                            "description": "Просмотр суммы поставки импортов",
+                            "is_active": false,
+                            "slug": "import-price"
+                        },
+                        {
+                            "id": "d6b65b39-9c0b-479a-9df6-d2778ee21e43",
+                            "parent_id": "",
+                            "name": "Создание импортов",
+                            "route": "products/import/create/:id",
+                            "description": "",
+                            "is_active": false,
+                            "slug": "import-create"
+                        }
+                    ],
+                    "is_active": false,
+                    "slug": "import"
+                },
+                {
+                    "id": "f8235765-29d1-498a-be17-fd32461bd500",
+                    "parent_id": "",
+                    "section_id": "",
+                    "name": "Трансфер",
+                    "route": "products/transfer",
+                    "description": "",
+                    "sequence_number": 0,
+                    "children": [
+                        {
+                            "id": "a6bb11ac-9474-41a2-b21d-e9a43df26d1d",
+                            "parent_id": "",
+                            "name": "Возможность просмотра списка трансферов",
+                            "route": "products/transfer",
+                            "description": "Возможность просмотра списка трансферов",
+                            "is_active": false,
+                            "slug": "transfers"
+                        },
+                        {
+                            "id": "2ed261c1-917b-4384-aeca-95b653cad2a3",
+                            "parent_id": "",
+                            "name": "Возможность создавать трансферы",
+                            "route": "products/transfer/create/:id",
+                            "description": "Возможность создавать трансферы",
+                            "is_active": false,
+                            "slug": "transfer-create"
+                        },
+                        {
+                            "id": "2c9819a0-7c11-4707-aa61-388d43ca6a72",
+                            "parent_id": "",
+                            "name": "Возможность принимать и проверять трансфер",
+                            "route": "products/transfer/finish-access/:id",
+                            "description": "",
+                            "is_active": false,
+                            "slug": "transfer-check"
+                        }
+                    ],
+                    "is_active": false,
+                    "slug": "transfer"
+                },
+                {
+                    "id": "ab205bbe-a4f6-477b-a930-3f8a7f73c2e2",
+                    "parent_id": "",
+                    "section_id": "",
+                    "name": "Заказы",
+                    "route": "products/orders",
+                    "description": "Заказы",
+                    "sequence_number": 0,
+                    "children": [
+                        {
+                            "id": "d61b97d4-bb98-4204-962c-9c87614942bc",
+                            "parent_id": "",
+                            "name": "Возможность оплаты заказа",
+                            "route": "products/orders/view/{:id}",
+                            "description": "Возможность оплаты заказа",
+                            "is_active": false,
+                            "slug": "order-payment"
+                        },
+                        {
+                            "id": "69e9dd85-ab41-4f4a-a364-4c1775cffb9a",
+                            "parent_id": "",
+                            "name": "Возможность создания заказа поставщику",
+                            "route": "products/orders/create/{:id}",
+                            "description": "Возможность создания заказа поставщику",
+                            "is_active": false,
+                            "slug": "order-create"
+                        },
+                        {
+                            "id": "7395d71a-9402-4520-8786-ccb651cba043",
+                            "parent_id": "",
+                            "name": "Возможность приемки заказа",
+                            "route": "products/orders/accept/{:id}",
+                            "description": "Возможность приемки заказа",
+                            "is_active": false,
+                            "slug": "order-accept"
+                        },
+                        {
+                            "id": "dbc21c99-48bf-48e4-b885-1fcea4a5463b",
+                            "parent_id": "",
+                            "name": "Возможность просмотра заказа",
+                            "route": "products/orders",
+                            "description": "Возможность просмотра заказа",
+                            "is_active": false,
+                            "slug": "order-detail"
+                        },
+                        {
+                            "id": "9743a27a-654f-44e3-8f88-519e87cec6ea",
+                            "parent_id": "",
+                            "name": "Возможность редактирования заказа",
+                            "route": "supplier-order/update/",
+                            "description": "Возможность редактирования заказа",
+                            "is_active": false,
+                            "slug": "order-edit"
+                        },
+                        {
+                            "id": "b677fdc5-4c03-4ccd-b936-da6828367fc0",
+                            "parent_id": "",
+                            "name": "Возможность просмотра суммы заказа",
+                            "route": "order-all-sum",
+                            "description": "Возможность просмотра суммы заказа",
+                            "is_active": false,
+                            "slug": "order-all-sum"
+                        }
+                    ],
+                    "is_active": false,
+                    "slug": "all-orders"
+                },
+                {
+                    "id": "058ef03a-df68-4c4f-812b-0eda26cea577",
+                    "parent_id": "",
+                    "section_id": "",
+                    "name": "Каталог",
+                    "route": "products/catalog1",
+                    "description": "Тултип, объясняющий что делает cоздание товара, услуги, комплекта",
+                    "sequence_number": 0,
+                    "children": [
+                        {
+                            "id": "8a30a41d-b2bb-497d-a9c1-4522616f0a25",
+                            "parent_id": "",
+                            "name": "Массовая печать ценников",
+                            "route": "/products/bulk/price-tags",
+                            "description": "Массовая печать ценников",
+                            "is_active": true,
+                            "slug": "bulk-price-tags"
+                        },
+                        {
+                            "id": "6b077305-9925-4aba-80c9-8d7a2f620205",
+                            "parent_id": "",
+                            "name": "Редактирование цен и остатков товара, услуги, комплекта",
+                            "route": "products/edit?balance=1\u0026price=1",
+                            "description": "",
+                            "is_active": true,
+                            "slug": "product-price-edit"
+                        },
+                        {
+                            "id": "db7190af-390f-4822-94fe-40a528c1edaf",
+                            "parent_id": "",
+                            "name": "Просмотр статистики каталога по товарам, услугам и комплектам",
+                            "route": "products/catalog?statistics=0",
+                            "description": "Возможность просматривать статистику по остаткам и себестоимости",
+                            "is_active": true,
+                            "slug": "catalog-statistics"
+                        },
+                        {
+                            "id": "8e78ba06-c7da-45d5-89e8-f29c886fe514",
+                            "parent_id": "",
+                            "name": "Массовое изменение свойств товаров",
+                            "route": "/products/bulk/fields",
+                            "description": "Массовое изменение свойств товаров",
+                            "is_active": true,
+                            "slug": "bulk-products-fields"
+                        },
+                        {
+                            "id": "55da1479-8a59-4c18-98fa-00521e8fff49",
+                            "parent_id": "",
+                            "name": "Возможность просмотра цен поставки продуктов",
+                            "route": "products/catalog?price=0",
+                            "description": "",
+                            "is_active": true,
+                            "slug": "product-supply-price"
+                        },
+                        {
+                            "id": "f27c7c8e-77b7-4df1-a10e-dd1a2ee4f6f5",
+                            "parent_id": "",
+                            "name": "Создание товара, услуги, комплекта",
+                            "route": "products/create",
+                            "description": "Возможность создавать товары, услуги и комплекты, а также устанавливать на них цены и остатки",
+                            "is_active": true,
+                            "slug": "product-create"
+                        },
+                        {
+                            "id": "3e6467da-8b0a-43a0-97b9-b563e5fc7d8a",
+                            "parent_id": "",
+                            "name": "Редактирование фотографий товара, услуги, комплекта",
+                            "route": "product/edit77",
+                            "description": "Возможность добавлять и удалять фотографии товарам, услугам и комплектам",
+                            "is_active": true,
+                            "slug": "product-photo"
+                        },
+                        {
+                            "id": "2f40fb6c-3a97-4b07-a01d-9b70bd40a592",
+                            "parent_id": "",
+                            "name": "Массовая загрузка фотографий к товарам, услугам и комплектам",
+                            "route": "/products/bulk/photo",
+                            "description": "Массовая загрузка фотографий к товарам, услугам и комплектам",
+                            "is_active": true,
+                            "slug": "bulk-photo"
+                        },
+                        {
+                            "id": "ab3ad28e-8ef0-40a2-a9da-3c65c95e82c3",
+                            "parent_id": "",
+                            "name": "Редактирование товара, услуги, комплекта",
+                            "route": "products/edit",
+                            "description": "Возможность менять описания и свойства товаров, услуг и комплектов",
+                            "is_active": true,
+                            "slug": "product-edit"
+                        },
+                        {
+                            "id": "c9e3c56d-c942-44db-908b-2c15806da11e",
+                            "parent_id": "",
+                            "name": "Просмотр и поиск товаров в каталоге",
+                            "route": "products/catalog",
+                            "description": "Просмотр и поиск товаров в каталоге",
+                            "is_active": true,
+                            "slug": "catalog-operations"
+                        },
+                        {
+                            "id": "c75c7885-88a5-463f-9c5d-268e863e24c4",
+                            "parent_id": "",
+                            "name": "Настройка малого остатка к товарам",
+                            "route": "/products/bulk/small_measurement_value",
+                            "description": "Настройка малого остатка к товарам",
+                            "is_active": true,
+                            "slug": "small-quantity-products"
+                        },
+                        {
+                            "id": "2c6e2a42-2507-4a08-b31e-2a5ee652aef9",
+                            "parent_id": "",
+                            "name": "Массовое изменение цены продажи на товары, услуги и комплекты",
+                            "route": "/products/bulk/price",
+                            "description": "Массовое изменение цены продажи на товары, услуги и комплекты",
+                            "is_active": true,
+                            "slug": "price-edit"
+                        },
+                        {
+                            "id": "8c7cf86c-f7dd-41b8-a13a-a66430997780",
+                            "parent_id": "",
+                            "name": "Возможность архивировать товары",
+                            "route": "/products/bulk/archive",
+                            "description": "Возможность архивировать товары",
+                            "is_active": true,
+                            "slug": "product-bulk-archive"
+                        },
+                        {
+                            "id": "eaf024af-3aa7-49d3-a407-9060b3287979",
+                            "parent_id": "",
+                            "name": "Возможность просмотра остатка всех магазинов",
+                            "route": "catalog/products",
+                            "description": "Возможность просмотра остатка всех магазинов",
+                            "is_active": true,
+                            "slug": "product-list"
+                        },
+                        {
+                            "id": "a01e86a4-122a-41e4-b1fc-0c8007b0da00",
+                            "parent_id": "",
+                            "name": "Возможность выгружать Каталог в Excel",
+                            "route": "v2/product-excel-export",
+                            "description": "",
+                            "is_active": true,
+                            "slug": "product-excel-export"
+                        }
+                    ],
+                    "is_active": true,
+                    "slug": "catalog"
+                },
+                {
+                    "id": "4fb43718-80a4-4e91-8863-b71726266a53",
+                    "parent_id": "",
+                    "section_id": "",
+                    "name": "Инвентаризация",
+                    "route": "products/inventory",
+                    "description": "Тултип, объясняющий что делает cоздание товара, услуги, комплекта",
+                    "sequence_number": 0,
+                    "children": [
+                        {
+                            "id": "2206f907-5750-4316-9b38-5a91bd704eb0",
+                            "parent_id": "",
+                            "name": "Возможность блокировать процесс инвентаризации",
+                            "route": "products/inventory/block/:id",
+                            "description": "Возможность блокировать процесс инвентаризации",
+                            "is_active": false,
+                            "slug": "inventory-block"
+                        },
+                        {
+                            "id": "8ca82fd9-eb98-4ec4-bf20-68be02a00e39",
+                            "parent_id": "",
+                            "name": "Возможность просмотра списка инвентаризаций",
+                            "route": "products/inventory",
+                            "description": "Возможность просмотра списка инвентаризаций",
+                            "is_active": false,
+                            "slug": "inventory-list"
+                        },
+                        {
+                            "id": "41ca52a3-332a-4d38-9c3a-cc3bbd625f1a",
+                            "parent_id": "",
+                            "name": "Возможность просматривать результаты инвентаризации",
+                            "route": "products/inventory/result/:id",
+                            "description": "Возможность просматривать результаты инвентаризации",
+                            "is_active": false,
+                            "slug": "inventory-result"
+                        },
+                        {
+                            "id": "cf463103-c0b0-43b5-b7f7-efe70aa0675b",
+                            "parent_id": "",
+                            "name": "Возможность завершать инвентаризацию",
+                            "route": "products/inventory/result/:id?canfinish=1",
+                            "description": "Возможность завершать инвентаризацию",
+                            "is_active": false,
+                            "slug": "inventory-finish"
+                        },
+                        {
+                            "id": "a0d0136a-9542-4ee9-aa35-7f025856794b",
+                            "parent_id": "",
+                            "name": "Возможность удалять незавершенную инвентаризацию",
+                            "route": "products/inventory/delete/:id",
+                            "description": "Возможность удалять незавершенную инвентаризацию",
+                            "is_active": false,
+                            "slug": "inventory-delete"
+                        },
+                        {
+                            "id": "549a9842-5e89-4237-918c-cd947423b993",
+                            "parent_id": "",
+                            "name": "Возможность просматривать заявленные товары к инвентаризации",
+                            "route": "products/inventory/?declared=1",
+                            "description": "Возможность просматривать заявленные товары к инвентаризации",
+                            "is_active": false,
+                            "slug": "inventory-declared"
+                        },
+                        {
+                            "id": "255baed4-87a6-46fe-ac0b-cdf9289eb7c6",
+                            "parent_id": "",
+                            "name": "Возможность создания полной инвентаризации",
+                            "route": "products/inventory/create/:id",
+                            "description": "Возможность создания полной инвентаризации",
+                            "is_active": false,
+                            "slug": "inventory-create"
+                        },
+                        {
+                            "id": "b7a31773-7f87-4dc5-97b8-c758b8ce4ea2",
+                            "parent_id": "",
+                            "name": "Возможность создания частичной инвентаризации",
+                            "route": "products/inventory/?partial=1",
+                            "description": "Возможность создания частичной инвентаризации",
+                            "is_active": false,
+                            "slug": "inventory-partial"
+                        }
+                    ],
+                    "is_active": false,
+                    "slug": "inventory"
+                },
+                {
+                    "id": "5a71b9d0-9d97-46e9-8265-c0cfbf15a57e",
+                    "parent_id": "",
+                    "section_id": "",
+                    "name": "Справочник",
+                    "route": "products/handbook",
+                    "description": "Тултип, объясняющий что делает cоздание товара, услуги, комплекта",
+                    "sequence_number": 0,
+                    "children": [],
+                    "is_active": false,
+                    "slug": "handbook"
+                }
+            ]
+        },
+        {
+            "id": "e00c4747-5ccf-43ab-9433-588be3d00005",
+            "key": "sales",
+            "sequence_number": 1,
+            "permissions": [
+                {
+                    "id": "94de2e86-e3c2-44f1-915c-8fab9a87a1a5",
+                    "parent_id": "",
+                    "section_id": "",
+                    "name": "Новая продажа",
+                    "route": "order/create",
+                    "description": "",
+                    "sequence_number": 0,
+                    "children": [
+                        {
+                            "id": "047ee2cc-5fcf-4a9d-b8f0-1f49d9bd297c",
+                            "parent_id": "",
+                            "name": "Возможность делать ручные скидки на чек и товар",
+                            "route": "new-sale/discount",
+                            "description": "Возможность делать ручные скидки на чек и товар",
+                            "is_active": true,
+                            "slug": "manual-discount"
+                        },
+                        {
+                            "id": "ae881f75-5f51-47bb-a9ce-cff1f4d7c77f",
+                            "parent_id": "",
+                            "name": "Возможность делать возвраты и обмены",
+                            "route": "order/new-order/return/:id",
+                            "description": "Возможность делать возвраты и обмены",
+                            "is_active": true,
+                            "slug": "order-return"
+                        },
+                        {
+                            "id": "83ef1b26-281c-4beb-9176-0d5b962068f5",
+                            "parent_id": "",
+                            "name": "Возможность делать транзакции продаж",
+                            "route": "order/create",
+                            "description": "Возможность делать транзакции продаж",
+                            "is_active": true,
+                            "slug": "order-new"
+                        },
+                        {
+                            "id": "66aa2275-d251-4d91-9c62-25da8ab733cd",
+                            "parent_id": "",
+                            "name": "Возможность осуществления продажи в долг",
+                            "route": "order/new-order/{:id}",
+                            "description": "Возможность осуществления продажи в долг",
+                            "is_active": true,
+                            "slug": "order-debt"
+                        },
+                        {
+                            "id": "439f08cd-e3ce-4a92-80c8-f85695f3170b",
+                            "parent_id": "",
+                            "name": "Возможность завершать отложки",
+                            "route": "order/new-order/draft/:id",
+                            "description": "Возможность завершать отложки",
+                            "is_active": true,
+                            "slug": "delay-finish"
+                        },
+                        {
+                            "id": "f851718a-527b-40e5-b298-c3bf86ad25bc",
+                            "parent_id": "",
+                            "name": "Возможность осуществлять возврат с другого магазина",
+                            "route": "/new-order/return-from-other-shop",
+                            "description": "Возможность осуществлять возврат с другого магазина",
+                            "is_active": false,
+                            "slug": "return-from-another-store"
+                        },
+                        {
+                            "id": "8e0be3a8-b903-4f5a-afc4-df9484fe05d3",
+                            "parent_id": "",
+                            "name": "SMS-авторизация при прикреплении клиента",
+                            "route": "order/sms-auth",
+                            "description": "SMS-авторизация при прикреплении клиента",
+                            "is_active": false,
+                            "slug": "order-assign-client-sms-auth"
+                        },
+                        {
+                            "id": "bad024af-3aa7-49d3-a407-8060b3285973",
+                            "parent_id": "",
+                            "name": "Отображать в списке продавцов",
+                            "route": "order/seller-list",
+                            "description": "Отображать в списке продавцов",
+                            "is_active": true,
+                            "slug": "seller-list"
+                        }
+                    ],
+                    "is_active": false,
+                    "slug": "new-sale"
+                },
+                {
+                    "id": "77792139-fa18-4ff0-98ef-9e35ada59daa",
+                    "parent_id": "",
+                    "section_id": "",
+                    "name": "Все продажи",
+                    "route": "order/all",
+                    "description": "",
+                    "sequence_number": 0,
+                    "children": [
+                        {
+                            "id": "ebd024af-3aa7-49d3-a407-8060b3285973",
+                            "parent_id": "",
+                            "name": "Просмотр продаж всех продавцов",
+                            "route": "order/all-sales",
+                            "description": "Когда роль включена, в модуле “Все продажи” отображаются продажи всех продавцов. При отключенной роли видны только собственные продажи",
+                            "is_active": true,
+                            "slug": "show-all-sales"
+                        },
+                        {
+                            "id": "6d8e1520-7af2-4ddf-a09c-038cb116a9f4",
+                            "parent_id": "",
+                            "name": "Возможность печати отчета",
+                            "route": "order/all/print",
+                            "description": "Возможность печати отчета",
+                            "is_active": true,
+                            "slug": "report-print"
+                        },
+                        {
+                            "id": "4399c77e-511a-4973-b456-1405f9b05914",
+                            "parent_id": "",
+                            "name": "Возможность удаления завершенной транзакции",
+                            "route": "order/delete/:id",
+                            "description": "Возможность удаления завершенной транзакции",
+                            "is_active": false,
+                            "slug": "order-delete"
+                        },
+                        {
+                            "id": "6cdafcdf-2d7c-4fa5-a101-3c8d53992f0a",
+                            "parent_id": "",
+                            "name": "Возможность редактирования даты оплаты в завершенной транзакции",
+                            "route": "order/edit/date/:id",
+                            "description": "Возможность редактирования даты оплаты в завершенной транзакции",
+                            "is_active": false,
+                            "slug": "order-date"
+                        },
+                        {
+                            "id": "dfcbb7e2-dc17-4a71-bc30-8ab83d06d209",
+                            "parent_id": "",
+                            "name": "Возможность просмотра списка транзакций в других магазинах",
+                            "route": "order/all/shops",
+                            "description": "",
+                            "is_active": false,
+                            "slug": "orders-other-shops"
+                        },
+                        {
+                            "id": "e3e6dc0c-3d83-4e40-b92e-215cba26cf3d",
+                            "parent_id": "",
+                            "name": "Возможность редактирования клиента в завершенной транзакции",
+                            "route": "order/edit/client/:id",
+                            "description": "Возможность редактирования клиента в завершенной транзакции",
+                            "is_active": false,
+                            "slug": "order-client"
+                        },
+                        {
+                            "id": "84a7ad38-96ee-4e2f-a7ce-9224f6048cb6",
+                            "parent_id": "",
+                            "name": "Возможность редактирования продавца в завершенной транзакции",
+                            "route": "order/edit/seller/:id",
+                            "description": "Возможность редактирования продавца в завершенной транзакции",
+                            "is_active": false,
+                            "slug": "order-seller"
+                        },
+                        {
+                            "id": "dbcb6b68-184f-40ea-aba8-51a647990ebd",
+                            "parent_id": "",
+                            "name": "Возможность редактирования типов оплат в завершенной транзакции",
+                            "route": "order/edit/type/:id",
+                            "description": "Возможность редактирования типов оплат в завершенной транзакции",
+                            "is_active": true,
+                            "slug": "payment-type"
+                        },
+                        {
+                            "id": "425386cf-d51d-4fcf-b217-d62e0f085f1f",
+                            "parent_id": "",
+                            "name": "Возможность просмотра списка транзакций за весь период",
+                            "route": "order/bro",
+                            "description": "Возможность просмотра списка транзакций за весь период",
+                            "is_active": true,
+                            "slug": "orders"
+                        }
+                    ],
+                    "is_active": false,
+                    "slug": "all-sales"
+                },
+                {
+                    "id": "b5ade22b-d749-4df7-943a-9c130e033e2a",
+                    "parent_id": "",
+                    "section_id": "",
+                    "name": "Кассовые смены",
+                    "route": "order/cash-shifts",
+                    "description": "",
+                    "sequence_number": 0,
+                    "children": [
+                        {
+                            "id": "bf906504-0063-4c21-abc5-eb6dc79c084e",
+                            "parent_id": "",
+                            "name": "Возможность создавать внесения, при открытии кассовой смены",
+                            "route": "order/cash-shifts/edit",
+                            "description": "Возможность создавать внесения, при открытии кассовой смены",
+                            "is_active": true,
+                            "slug": "cashbox-open-edit"
+                        },
+                        {
+                            "id": "672ab3d9-a631-44c6-bf2c-410427579a00",
+                            "parent_id": "",
+                            "name": "Возможность открытия и закрытия кассовой смены",
+                            "route": "order/cash-shifts/close",
+                            "description": "Возможность открытия и закрытия кассовой смены",
+                            "is_active": true,
+                            "slug": "cashbox-shifts"
+                        },
+                        {
+                            "id": "f629b948-c523-46f4-a444-18a7992dd09e",
+                            "parent_id": "",
+                            "name": "Возможность просмотра кассовых смен",
+                            "route": "---",
+                            "description": "Возможность просмотра кассовых смен",
+                            "is_active": true,
+                            "slug": "cash-shifts-detail"
+                        }
+                    ],
+                    "is_active": true,
+                    "slug": "cash-shifts"
+                },
+                {
+                    "id": "8850ca60-1050-40bd-81ec-8d95f47a03bc",
+                    "parent_id": "",
+                    "section_id": "",
+                    "name": "Кассовые операции",
+                    "route": "order/cashbox-operations",
+                    "description": "Произвести операцию смены кассы или безнал в кассовой операции",
+                    "sequence_number": 0,
+                    "children": [
+                        {
+                            "id": "771aedf9-a745-4644-9695-9f772c834271",
+                            "parent_id": "",
+                            "name": "Произвести операцию смены кассы или безнал в кассовой операции",
+                            "route": "order/cashbox-operations/manager",
+                            "description": "",
+                            "is_active": true,
+                            "slug": "cashbox-change"
+                        },
+                        {
+                            "id": "8cf09044-e011-43c6-92ad-aa3b7ead076f",
+                            "parent_id": "",
+                            "name": "Возможность создавать инкассацию по доступной кассе",
+                            "route": "gl-transaction",
+                            "description": "Возможность создавать инкассацию по доступной кассе",
+                            "is_active": false,
+                            "slug": "gl-transaction-collection"
+                        },
+                        {
+                            "id": "251f15aa-1c49-40f4-b46d-ee2c71e70a5f",
+                            "parent_id": "",
+                            "name": "Возможность создавать доходы по доступным категориям на кассе",
+                            "route": "gl-transaction",
+                            "description": "Возможность создавать доходы по доступным категориям на кассе",
+                            "is_active": true,
+                            "slug": "gl-transaction-income"
+                        },
+                        {
+                            "id": "77e1d1eb-85b6-4037-8fd5-467126ab8b7b",
+                            "parent_id": "",
+                            "name": "Возможность создавать расходы по доступным категориям на кассе",
+                            "route": "gl-transaction",
+                            "description": "Возможность создавать расходы по доступным категориям на кассе",
+                            "is_active": true,
+                            "slug": "gl-transaction-cost"
+                        },
+                        {
+                            "id": "7fe1d2dc-279e-4221-918a-cd16e3fe7188",
+                            "parent_id": "",
+                            "name": "Возможность просмотра истории кассовых расходов и доходов",
+                            "route": "order/cashbox-operations",
+                            "description": "Возможность просмотра истории кассовых расходов и доходов",
+                            "is_active": true,
+                            "slug": "gl-transaction-view"
+                        }
+                    ],
+                    "is_active": false,
+                    "slug": "cashbox-operations"
+                }
+            ]
+        },
+        {
+            "id": "c2267912-bcbf-4a1b-a572-753dd242bb3c",
+            "key": "clients",
+            "sequence_number": 2,
+            "permissions": [
+                {
+                    "id": "39d322cf-1075-4e27-8840-dd878541c4dc",
+                    "parent_id": "",
+                    "section_id": "",
+                    "name": "Долги клиентов",
+                    "route": "clients/debts",
+                    "description": "",
+                    "sequence_number": 0,
+                    "children": [
+                        {
+                            "id": "40dc6fbc-bf5d-4456-b33a-8d0d0b53b263",
+                            "parent_id": "",
+                            "name": "Возможность просмотра транзакций долгов",
+                            "route": "clients/debts",
+                            "description": "Возможность просмотра транзакций долгов",
+                            "is_active": true,
+                            "slug": "debt-detail"
+                        },
+                        {
+                            "id": "bb98cb0f-3a78-4c0b-8e90-c5535dadcebb",
+                            "parent_id": "",
+                            "name": "Возможность погашения транзакции долга",
+                            "route": "client/debts",
+                            "description": "Возможность погашения транзакции долга",
+                            "is_active": true,
+                            "slug": "debt-cancel"
+                        },
+                        {
+                            "id": "0a0c7046-10ad-45f4-926a-5c69c6be5b3d",
+                            "parent_id": "",
+                            "name": "Возможность редактирования транзакции долга",
+                            "route": "clients/debts/edit/:id",
+                            "description": "Возможность редактирования транзакции долга",
+                            "is_active": true,
+                            "slug": "debt-edit"
+                        }
+                    ],
+                    "is_active": true,
+                    "slug": "debts"
+                },
+                {
+                    "id": "a734891d-272f-47fe-a9d4-2168c4eef268",
+                    "parent_id": "",
+                    "section_id": "",
+                    "name": "Все клиенты",
+                    "route": "clients",
+                    "description": "",
+                    "sequence_number": 0,
+                    "children": [
+                        {
+                            "id": "39ec2725-a0fe-4c77-b827-98926d7994c3",
+                            "parent_id": "",
+                            "name": "Возможность удаления клиента",
+                            "route": "client-delete",
+                            "description": "",
+                            "is_active": false,
+                            "slug": "client-delete"
+                        },
+                        {
+                            "id": "4b97f975-bdaf-4f18-a6cc-0d3a16cbcfde",
+                            "parent_id": "",
+                            "name": "Возможность редактирования баланса клиента",
+                            "route": "customer/update-balance",
+                            "description": "Возможность редактирования баланса клиента",
+                            "is_active": true,
+                            "slug": "balance-edit"
+                        },
+                        {
+                            "id": "f2331d43-1b3f-4495-9c05-1c9f2e0e8dad",
+                            "parent_id": "",
+                            "name": "Возможность просмотра деталей клиента",
+                            "route": "clients/client-card/:id",
+                            "description": "Возможность просмотра деталей клиента",
+                            "is_active": true,
+                            "slug": "client-card"
+                        },
+                        {
+                            "id": "a3d208da-5898-497c-820a-7a652d2afc53",
+                            "parent_id": "",
+                            "name": "Возможность просмотра списка клиентов",
+                            "route": "clients",
+                            "description": "Возможность просмотра списка клиентов",
+                            "is_active": true,
+                            "slug": "clients"
+                        },
+                        {
+                            "id": "b925cd1f-807f-41ac-b4d0-623c5d6ab42b",
+                            "parent_id": "",
+                            "name": "Возможность редактирования карточки клиента",
+                            "route": "clients/client-card/edit/:id",
+                            "description": "Возможность редактирования карточки клиента",
+                            "is_active": false,
+                            "slug": "client-card-edit"
+                        }
+                    ],
+                    "is_active": false,
+                    "slug": "all-clients"
+                },
+                {
+                    "id": "75674884-2046-4e31-bfd6-31efc8334138",
+                    "parent_id": "",
+                    "section_id": "",
+                    "name": "Программа лояльности",
+                    "route": "loyalty-program",
+                    "description": "",
+                    "sequence_number": 0,
+                    "children": [
+                        {
+                            "id": "1f29b127-09db-41f7-94a9-51fe7cd2e6b5",
+                            "parent_id": "",
+                            "name": "Возможность редактирования программы лояльности",
+                            "route": "clients/loyalty-program/edit/:id",
+                            "description": "Возможность редактирования программы лояльности",
+                            "is_active": false,
+                            "slug": "loyalty-edit"
+                        },
+                        {
+                            "id": "e7347bb9-4b22-4e01-beca-5b9a1e4eadd1",
+                            "parent_id": "",
+                            "name": "Возможность создания программы лояльности",
+                            "route": "clients/loyalty-program/create",
+                            "description": "Возможность создания программы лояльности",
+                            "is_active": false,
+                            "slug": "loyalty-create"
+                        },
+                        {
+                            "id": "29de2c73-2eec-421c-b556-4e1950e3e51f",
+                            "parent_id": "",
+                            "name": "Возможность просмотра настроек программы лояльности",
+                            "route": "clients/loyalty-program",
+                            "description": "Возможность просмотра настроек программы лояльности",
+                            "is_active": true,
+                            "slug": "loyalty-setting"
+                        }
+                    ],
+                    "is_active": false,
+                    "slug": "loyalty-program"
+                },
+                {
+                    "id": "a93e998c-fee0-4116-8a36-490eebb7a99f",
+                    "parent_id": "",
+                    "section_id": "",
+                    "name": "Группы клиентов",
+                    "route": "clients-group",
+                    "description": "",
+                    "sequence_number": 0,
+                    "children": [
+                        {
+                            "id": "db5cf817-f632-4587-bb89-a6431d1927cf",
+                            "parent_id": "",
+                            "name": "Возможность создания групп и тегов",
+                            "route": "clients/clients-group/create",
+                            "description": "Возможность создания групп и тегов",
+                            "is_active": false,
+                            "slug": "group-create"
+                        },
+                        {
+                            "id": "03c12a78-49ee-4103-8b5d-6d1423d46747",
+                            "parent_id": "",
+                            "name": "Возможность редактирования групп и тегов",
+                            "route": "clients/clients-group/edit/:id",
+                            "description": "Возможность редактирования групп и тегов",
+                            "is_active": false,
+                            "slug": "group-edit"
+                        },
+                        {
+                            "id": "2a999d89-4276-4426-835d-819cd2a992cc",
+                            "parent_id": "",
+                            "name": "Возможность просмотра списка групп и тегов",
+                            "route": "clients/clients-group",
+                            "description": "Возможность просмотра списка групп и тегов",
+                            "is_active": true,
+                            "slug": "group-list"
+                        }
+                    ],
+                    "is_active": false,
+                    "slug": "clients-group"
+                }
+            ]
+        },
+        {
+            "id": "a154ad91-7fbf-4413-ac7e-bf4de005444b",
+            "key": "marketing",
+            "sequence_number": 3,
+            "permissions": [
+                {
+                    "id": "b77dff60-e4ec-4689-ace6-1fbbd4e1d967",
+                    "parent_id": "",
+                    "section_id": "",
+                    "name": "Промокоды",
+                    "route": "marketing/promo-codes",
+                    "description": "Промокоды",
+                    "sequence_number": 0,
+                    "children": [],
+                    "is_active": false,
+                    "slug": "marketing-promo-code"
+                },
+                {
+                    "id": "8f35218c-9a9e-48b3-be04-391e6fe1bc7d",
+                    "parent_id": "",
+                    "section_id": "",
+                    "name": "Акции",
+                    "route": "promos",
+                    "description": "Акции",
+                    "sequence_number": 0,
+                    "children": [
+                        {
+                            "id": "ec52108b-4e5b-4398-80bf-4904192d8c8f",
+                            "parent_id": "",
+                            "name": "Редактирование акции",
+                            "route": "promo/edit",
+                            "description": "Редактирование акции",
+                            "is_active": false,
+                            "slug": "promo-edit"
+                        },
+                        {
+                            "id": "f1b996fb-5cae-4528-8a2f-532799d579f3",
+                            "parent_id": "",
+                            "name": " Просмотр страницы",
+                            "route": "marketing/promotions",
+                            "description": " Просмотр страницы",
+                            "is_active": false,
+                            "slug": "promo"
+                        },
+                        {
+                            "id": "158f0285-0878-4136-86f4-5dfe1337255f",
+                            "parent_id": "",
+                            "name": "Создание акции",
+                            "route": "promo/create",
+                            "description": "Создание акции",
+                            "is_active": false,
+                            "slug": "promo-create"
+                        },
+                        {
+                            "id": "c50f7266-5666-4eee-bf7d-1feade6e45bc",
+                            "parent_id": "",
+                            "name": "Остановка/Возобновление акции",
+                            "route": "promo/action",
+                            "description": "Остановка/Возобновление акции",
+                            "is_active": false,
+                            "slug": "promo-action"
+                        },
+                        {
+                            "id": "1366b5f9-1b28-40c7-b198-508c6fa9699e",
+                            "parent_id": "",
+                            "name": "Удаление акции",
+                            "route": "promo/delete",
+                            "description": "Удаление акции",
+                            "is_active": false,
+                            "slug": "promo-delete"
+                        }
+                    ],
+                    "is_active": false,
+                    "slug": "promos"
+                },
+                {
+                    "id": "264c8cda-64c6-497b-bff3-eea75f561f43",
+                    "parent_id": "",
+                    "section_id": "",
+                    "name": "SMS рассылка",
+                    "route": "marketing/sms-mailing",
+                    "description": "",
+                    "sequence_number": 0,
+                    "children": [
+                        {
+                            "id": "45fea56b-a022-4eaf-b53c-b86a7a96630a",
+                            "parent_id": "",
+                            "name": "Создание новой рассылки",
+                            "route": "sms/mailing/create",
+                            "description": "Создание новой рассылки",
+                            "is_active": false,
+                            "slug": "sms-create"
+                        },
+                        {
+                            "id": "94182e43-1684-4fd3-8537-dcdf55b22b04",
+                            "parent_id": "",
+                            "name": "Просмотр страницы",
+                            "route": "marketing/sms-mailing",
+                            "description": "Просмотр страницы",
+                            "is_active": false,
+                            "slug": "sms-view"
+                        }
+                    ],
+                    "is_active": false,
+                    "slug": "sms"
+                },
+                {
+                    "id": "c8409945-8595-44b2-b89c-1a9d5cd64ed5",
+                    "parent_id": "",
+                    "section_id": "",
+                    "name": "Подарочные карты",
+                    "route": "marketing/gift-cards/tutorial",
+                    "description": "Подарочные карты",
+                    "sequence_number": 0,
+                    "children": [
+                        {
+                            "id": "50c9c82e-3081-4677-a9a8-8f9246d75e01",
+                            "parent_id": "",
+                            "name": "Возможность оплаты подарочными картами",
+                            "route": "gift-card-payment",
+                            "description": "Возможность оплаты подарочными картами",
+                            "is_active": false,
+                            "slug": "pay-gift-card"
+                        },
+                        {
+                            "id": "9eee99cd-7d2c-41c3-aee3-9db90f6ecc24",
+                            "parent_id": "",
+                            "name": "Возможность продажи подарочных карт в новой продаже",
+                            "route": "gift-card-sale",
+                            "description": "Возможность продажи подарочных карт в новой продаже",
+                            "is_active": false,
+                            "slug": "sell-gift-card"
+                        },
+                        {
+                            "id": "97004b5e-9aaa-4021-83fa-764baa841887",
+                            "parent_id": "",
+                            "name": "Возможность просмотра страницы подарочных карт",
+                            "route": "marketing/gift-cards/tutorial",
+                            "description": "Возможность просмотра страницы подарочных карт",
+                            "is_active": false,
+                            "slug": "view-gift-card"
+                        }
+                    ],
+                    "is_active": false,
+                    "slug": "gift-cards"
+                }
+            ]
+        },
+        {
+            "id": "4519bd93-fdbc-428f-8010-6da882f0fd84",
+            "key": "reports",
+            "sequence_number": 4,
+            "permissions": [
+                {
+                    "id": "0ba88835-ec69-4d3e-9fd9-7aa0c824719f",
+                    "parent_id": "",
+                    "section_id": "",
+                    "name": "Магазин",
+                    "route": "reports/shop",
+                    "description": "Магазин",
+                    "sequence_number": 0,
+                    "children": [
+                        {
+                            "id": "87d353e8-a7ba-4f3e-9249-99a406989342",
+                            "parent_id": "",
+                            "name": "Отчет \"Сводный\"",
+                            "route": "reports/shop/summary",
+                            "description": "",
+                            "is_active": false,
+                            "slug": "reports-shop-summary"
+                        },
+                        {
+                            "id": "6d9585ed-7f71-4004-8be8-aba750191592",
+                            "parent_id": "",
+                            "name": "Отчет \"Транзакции\"",
+                            "route": "reports/shop/transactions",
+                            "description": "",
+                            "is_active": false,
+                            "slug": "reports-shop-transactions"
+                        },
+                        {
+                            "id": "b80ef171-4dca-4185-a27c-0cf520405096",
+                            "parent_id": "",
+                            "name": "Сводный отчет",
+                            "route": "**-reports/shop",
+                            "description": "Сводный отчет",
+                            "is_active": false,
+                            "slug": "summary-report"
+                        }
+                    ],
+                    "is_active": false,
+                    "slug": "reports-shop"
+                },
+                {
+                    "id": "45a779cc-314e-4bda-8b8a-51851374bce5",
+                    "parent_id": "",
+                    "section_id": "",
+                    "name": "Товары",
+                    "route": "reports/products",
+                    "description": "",
+                    "sequence_number": 0,
+                    "children": [
+                        {
+                            "id": "daf24a77-635e-4edc-a78e-6255954ccc86",
+                            "parent_id": "",
+                            "name": "Отчет \"Списания\"",
+                            "route": "reports/writeoff",
+                            "description": "Отчет \"Списания\"",
+                            "is_active": false,
+                            "slug": "report-write-off"
+                        },
+                        {
+                            "id": "73d1b26f-3f00-4f0d-87e6-54a97378e600",
+                            "parent_id": "",
+                            "name": "Отчет \"Итоги инвентаризации\"",
+                            "route": "reports/stocktaking",
+                            "description": "Отчет \"Итоги инвентаризации\"",
+                            "is_active": false,
+                            "slug": "report-stocktaking"
+                        },
+                        {
+                            "id": "d1ee6597-a64b-4b27-8447-2423743dcd8c",
+                            "parent_id": "",
+                            "name": "Отчет \"Возвраты заказов\"",
+                            "route": "reports/supplier-order-return",
+                            "description": "Отчет \"Возвраты заказов\"",
+                            "is_active": false,
+                            "slug": "report-supplier-order-return"
+                        },
+                        {
+                            "id": "44a071dc-65d2-44f4-ade8-a402ec49eb21",
+                            "parent_id": "",
+                            "name": "Отчет \"Продажи по товарам\"",
+                            "route": "reports/products/summary",
+                            "description": "",
+                            "is_active": false,
+                            "slug": "reports-products-summary"
+                        },
+                        {
+                            "id": "560797cb-0cb8-48bc-ac3b-62b81c4ae267",
+                            "parent_id": "",
+                            "name": "Отчет \"Продажи по поставщикам\"",
+                            "route": "reports/products/supplier",
+                            "description": "",
+                            "is_active": false,
+                            "slug": "reports-products-supplier"
+                        },
+                        {
+                            "id": "fcbfe72a-ba5e-4139-9563-c80a0cab8485",
+                            "parent_id": "",
+                            "name": "Отчет \"Эффективность товаров\"",
+                            "route": "reports/products/efficiency",
+                            "description": "",
+                            "is_active": false,
+                            "slug": "reports-products-efficiency"
+                        },
+                        {
+                            "id": "851d5795-8ebd-4692-bbfd-3f8b0fdb06e9",
+                            "parent_id": "",
+                            "name": "Отчет по остаткам",
+                            "route": "reports/products/leftover",
+                            "description": "",
+                            "is_active": false,
+                            "slug": "reports-products-leftover"
+                        },
+                        {
+                            "id": "d31738a3-c1ef-429d-a561-d510b8242f99",
+                            "parent_id": "",
+                            "name": "Отчет \"Импорты\"",
+                            "route": "reports/products/import",
+                            "description": "",
+                            "is_active": false,
+                            "slug": "reports-products-import"
+                        },
+                        {
+                            "id": "0e67a8d0-858a-42f1-899b-72e06b42b82a",
+                            "parent_id": "",
+                            "name": "Продажи товаров",
+                            "route": "deleted-reports/products",
+                            "description": "Продажи товаров",
+                            "is_active": false,
+                            "slug": "report-product"
+                        },
+                        {
+                            "id": "e92fc855-79c8-47fd-86b5-d7cad7504637",
+                            "parent_id": "",
+                            "name": "Отчет \"ABC-сегментация\"",
+                            "route": "reports/abc-segmentation",
+                            "description": "Отчет \"ABC-сегментация\"",
+                            "is_active": false,
+                            "slug": "report-abc-segmentation"
+                        }
+                    ],
+                    "is_active": false,
+                    "slug": "report-products"
+                },
+                {
+                    "id": "399d7743-c073-478a-afb6-5939c9299d4a",
+                    "parent_id": "",
+                    "section_id": "",
+                    "name": "Избранные",
+                    "route": "reports/favorites",
+                    "description": "",
+                    "sequence_number": 0,
+                    "children": [],
+                    "is_active": false,
+                    "slug": "favourites"
+                },
+                {
+                    "id": "aa0dc56a-979d-49ff-bbc9-abf007b3e0ca",
+                    "parent_id": "",
+                    "section_id": "",
+                    "name": "Клиенты",
+                    "route": "reports/clients",
+                    "description": "",
+                    "sequence_number": 0,
+                    "children": [
+                        {
+                            "id": "fb201c89-e47b-4bea-b2fc-bd5031734096",
+                            "parent_id": "",
+                            "name": "Отчет \"Покупки клиентов\"",
+                            "route": "reports/clients/purchases",
+                            "description": "",
+                            "is_active": false,
+                            "slug": "reports-clients-purchases"
+                        },
+                        {
+                            "id": "68891c0f-1db3-4043-960a-574b337b8abf",
+                            "parent_id": "",
+                            "name": "Отчет \"Клиенты\"",
+                            "route": "reports/clients/summary",
+                            "description": "",
+                            "is_active": false,
+                            "slug": "reports-clients-summary"
+                        },
+                        {
+                            "id": "e899ad74-ff43-47be-a075-41b70a70b79e",
+                            "parent_id": "",
+                            "name": "Продажи по клиентам",
+                            "route": "deleted-reports/clients",
+                            "description": "Продажи по клиентам",
+                            "is_active": false,
+                            "slug": "report-client"
+                        }
+                    ],
+                    "is_active": false,
+                    "slug": "report-clients"
+                },
+                {
+                    "id": "c7ea757e-25f4-47dc-ab6a-989fb85d0258",
+                    "parent_id": "",
+                    "section_id": "",
+                    "name": "Финансы",
+                    "route": "reports/finances",
+                    "description": "",
+                    "sequence_number": 0,
+                    "children": [
+                        {
+                            "id": "b6e53d08-4155-4caf-b324-18a9b564cb9a",
+                            "parent_id": "",
+                            "name": "Отчет \"Финансовые транзакции\"",
+                            "route": "reports/finances/movements",
+                            "description": "",
+                            "is_active": false,
+                            "slug": "reports-finances-movements"
+                        },
+                        {
+                            "id": "1fc363bf-25c6-426c-8dd9-ea818c0784b1",
+                            "parent_id": "",
+                            "name": "Отчет \"Прибыли и убытки\"",
+                            "route": "reports/finances/summary",
+                            "description": "",
+                            "is_active": false,
+                            "slug": "reports-finances-summary"
+                        },
+                        {
+                            "id": "958cad3c-a8f4-47ed-9c85-ac216e1ea4bf",
+                            "parent_id": "",
+                            "name": "Прибыль и убытки",
+                            "route": "deleted-finance/report",
+                            "description": "Прибыль и убытки",
+                            "is_active": false,
+                            "slug": "finance-report"
+                        }
+                    ],
+                    "is_active": false,
+                    "slug": "report-finance"
+                },
+                {
+                    "id": "49ab119a-6e66-4ae5-95ec-ef3238654620",
+                    "parent_id": "",
+                    "section_id": "",
+                    "name": "Продавцы",
+                    "route": "reports/sellers",
+                    "description": "",
+                    "sequence_number": 0,
+                    "children": [
+                        {
+                            "id": "a922c8d4-1fc8-4ff5-ae3b-a984393342ad",
+                            "parent_id": "",
+                            "name": "Продажи по продавцам",
+                            "route": "reports/report-seller",
+                            "description": "Продажи по продавцам",
+                            "is_active": false,
+                            "slug": "report-seller"
+                        },
+                        {
+                            "id": "3f80fa90-a7f5-43b2-8095-188ec3354dda",
+                            "parent_id": "",
+                            "name": "Продажи товаров",
+                            "route": "reports/sellers/products",
+                            "description": "Продажи товаров",
+                            "is_active": false,
+                            "slug": "report-seller-products"
+                        }
+                    ],
+                    "is_active": false,
+                    "slug": "report-sellers"
+                },
+                {
+                    "id": "8b3868eb-e57a-4f40-9458-7189a9b8c55c",
+                    "parent_id": "",
+                    "section_id": "",
+                    "name": "Мои отчеты",
+                    "route": "deleted-reports/my",
+                    "description": "",
+                    "sequence_number": 0,
+                    "children": [],
+                    "is_active": false,
+                    "slug": "my-reports"
+                },
+                {
+                    "id": "96dc018c-ca86-471e-9f4f-fd44519f0c9d",
+                    "parent_id": "",
+                    "section_id": "",
+                    "name": "Возможность скачивать отчет по продажам",
+                    "route": "/v1/transaction-report-by-products-excel",
+                    "description": "",
+                    "sequence_number": 0,
+                    "children": [],
+                    "is_active": false,
+                    "slug": "transactions-report"
+                }
+            ]
+        },
+        {
+            "id": "a64023cc-f96e-4d95-abb3-f5fd8fca01c0",
+            "key": "finance",
+            "sequence_number": 5,
+            "permissions": [
+                {
+                    "id": "4b60e335-dc6b-405a-be77-56a317e90490",
+                    "parent_id": "",
+                    "section_id": "",
+                    "name": "Состояние счетов",
+                    "route": "finance/state",
+                    "description": "Состояние счетов",
+                    "sequence_number": 0,
+                    "children": [
+                        {
+                            "id": "1c18164c-2c9c-41a5-aa93-80b92bb229db",
+                            "parent_id": "",
+                            "name": "Возможность просмотра состояния счетов",
+                            "route": "finance/state",
+                            "description": "Возможность просмотра состояния счетов",
+                            "is_active": false,
+                            "slug": "state-view"
+                        }
+                    ],
+                    "is_active": false,
+                    "slug": "finance-state"
+                },
+                {
+                    "id": "4afe6c34-6404-4105-8945-1a1f9d3db10f",
+                    "parent_id": "",
+                    "section_id": "",
+                    "name": "Финансовые категории",
+                    "route": "finance/categories",
+                    "description": "Финансовые категории",
+                    "sequence_number": 0,
+                    "children": [
+                        {
+                            "id": "bc40a294-5bc2-4d03-9ba2-45520b4ab73b",
+                            "parent_id": "",
+                            "name": "Возможность просматривать категории доходов и расходов",
+                            "route": "finance/categories",
+                            "description": "Возможность просматривать категории доходов и расходов",
+                            "is_active": false,
+                            "slug": "category-detail"
+                        },
+                        {
+                            "id": "9f6a5536-3d74-4964-b0f8-fffb8bc49821",
+                            "parent_id": "",
+                            "name": "Возможность объединять категории доходов и расходов",
+                            "route": "account/merge",
+                            "description": "Возможность объединять категории доходов и расходов",
+                            "is_active": false,
+                            "slug": "category-merge"
+                        },
+                        {
+                            "id": "2c76d67b-11af-48a9-9150-b771ef9bfd1c",
+                            "parent_id": "",
+                            "name": "Возможность удалять категории доходов и расходов",
+                            "route": "finance/categories/delete",
+                            "description": "Возможность удалять категории доходов и расходов",
+                            "is_active": false,
+                            "slug": "category-delete"
+                        },
+                        {
+                            "id": "abcf3b9e-2c7c-42c6-8d69-b1108ba8e578",
+                            "parent_id": "",
+                            "name": "Возможность создавать категории доходов и расходов",
+                            "route": "finance/categories/create",
+                            "description": "Возможность создавать категории доходов и расходов",
+                            "is_active": false,
+                            "slug": "category-create"
+                        }
+                    ],
+                    "is_active": false,
+                    "slug": "categories"
+                },
+                {
+                    "id": "77d13445-4527-4f12-9e2a-e43d46ca14b1",
+                    "parent_id": "",
+                    "section_id": "",
+                    "name": "Финансовые транзакции",
+                    "route": "finance/transactions",
+                    "description": "Финансовые транзакции",
+                    "sequence_number": 0,
+                    "children": [
+                        {
+                            "id": "fc02fb88-1da4-4422-bb06-6ee15777392a",
+                            "parent_id": "",
+                            "name": "Возможность просматривать транзакции доходов, расходов, конвертации и перемещений ",
+                            "route": "finance/transactions",
+                            "description": "Возможность просматривать транзакции доходов, расходов, конвертации и перемещений ",
+                            "is_active": false,
+                            "slug": "transactions-view"
+                        },
+                        {
+                            "id": "56d1990f-6326-421a-b4e5-a015babb3846",
+                            "parent_id": "",
+                            "name": "Возможность проверять и принимать закрытые кассовые смены ",
+                            "route": "finance/transactions/view",
+                            "description": "Возможность проверять и принимать закрытые кассовые смены ",
+                            "is_active": false,
+                            "slug": "transactions-check"
+                        },
+                        {
+                            "id": "ae7d5bff-0667-457c-8f87-46eb099b9f08",
+                            "parent_id": "",
+                            "name": "Возможность создавать транзакции доходов, расходов, конвертации и перемещений",
+                            "route": "finance/transactions/create",
+                            "description": "Возможность создавать транзакции доходов, расходов, конвертации и перемещений",
+                            "is_active": false,
+                            "slug": "transactions-create"
+                        }
+                    ],
+                    "is_active": false,
+                    "slug": "transactions"
+                }
+            ]
+        },
+        {
+            "id": "a27b7379-31e8-4574-82a1-3be4cdb00d81",
+            "key": "settings",
+            "sequence_number": 6,
+            "permissions": [
+                {
+                    "id": "ba7075a1-f724-45a9-88c9-45fe702c0f35",
+                    "parent_id": "",
+                    "section_id": "",
+                    "name": "Просмотр и управление ключами интеграций",
+                    "route": "/settings/integrations",
+                    "description": "Дает доступ на просмотрт, создание, удаление пользователей api интеграции",
+                    "sequence_number": 0,
+                    "children": [],
+                    "is_active": false,
+                    "slug": "create-integrated"
+                },
+                {
+                    "id": "9ddfee73-eed6-4ea2-ac45-d24a1d44fc65",
+                    "parent_id": "",
+                    "section_id": "",
+                    "name": "товары",
+                    "route": "settings/product",
+                    "description": "",
+                    "sequence_number": 0,
+                    "children": [
+                        {
+                            "id": "629880b2-cad2-40cc-8fc7-916f71c40fc6",
+                            "parent_id": "",
+                            "name": "Возможность добавления дополнительных характеристик к товару",
+                            "route": "settings/additional/create",
+                            "description": "Возможность добавления дополнительных характеристик к товару",
+                            "is_active": false,
+                            "slug": "characteristics-create"
+                        },
+                        {
+                            "id": "c1c6d506-eaa4-491c-bae8-3d607a74b9d8",
+                            "parent_id": "",
+                            "name": "Возможность редактирования дополнительных характеристик к товару",
+                            "route": "settings/additional/edit/:id",
+                            "description": "Возможность редактирования дополнительных характеристик к товару",
+                            "is_active": false,
+                            "slug": "characteristics-edit"
+                        },
+                        {
+                            "id": "1ac15b2b-faf1-4f0d-81f4-1cd5a7d8a2f9",
+                            "parent_id": "",
+                            "name": "Возможность добавления единицы измерения",
+                            "route": "settings/product/create",
+                            "description": "Возможность добавления единицы измерения",
+                            "is_active": false,
+                            "slug": "measurement-create"
+                        },
+                        {
+                            "id": "73d70c18-5ac2-45de-8497-38e6d72cb920",
+                            "parent_id": "",
+                            "name": "Возможность редактирования единицы измерения",
+                            "route": "settings/product/edit/:id",
+                            "description": "Возможность редактирования единицы измерения",
+                            "is_active": false,
+                            "slug": "measurement-edit"
+                        },
+                        {
+                            "id": "3c097ac0-5702-445b-9d35-b271da87e980",
+                            "parent_id": "",
+                            "name": "Возможность просмотра информации о товарах",
+                            "route": "settings/product",
+                            "description": "Возможность просмотра информации о товарах",
+                            "is_active": false,
+                            "slug": "settings-product"
+                        }
+                    ],
+                    "is_active": false,
+                    "slug": "settings-products"
+                },
+                {
+                    "id": "c687338d-f0e4-4309-bd88-db9dfa4ab0f1",
+                    "parent_id": "",
+                    "section_id": "",
+                    "name": "Профиль",
+                    "route": "settings/profile",
+                    "description": "",
+                    "sequence_number": 0,
+                    "children": [
+                        {
+                            "id": "0aacb736-9b34-4676-a3ba-2d476a434dc3",
+                            "parent_id": "",
+                            "name": "Возможность редактирования профиля",
+                            "route": "settings/profile",
+                            "description": "Возможность редактирования профиля",
+                            "is_active": true,
+                            "slug": "settings-profile"
+                        }
+                    ],
+                    "is_active": true,
+                    "slug": "settings-profiles"
+                },
+                {
+                    "id": "2d1161c5-9616-4dce-8ff1-710a6d58758a",
+                    "parent_id": "",
+                    "section_id": "",
+                    "name": "Уведомления",
+                    "route": "settings/notification",
+                    "description": "Уведомления",
+                    "sequence_number": 0,
+                    "children": [
+                        {
+                            "id": "caba46d8-308f-4cff-bafb-da22f75713c0",
+                            "parent_id": "",
+                            "name": "Уведомления в системе",
+                            "route": "settings/notification/system",
+                            "description": "Уведомления в системе",
+                            "is_active": false,
+                            "slug": "notification-view"
+                        },
+                        {
+                            "id": "05a937a8-1060-49ee-9791-5200e271d10f",
+                            "parent_id": "",
+                            "name": "Telegram-бот",
+                            "route": "settings/notification/telegram",
+                            "description": "Telegram-бот",
+                            "is_active": false,
+                            "slug": "telegram-notification"
+                        },
+                        {
+                            "id": "34c93817-b256-4985-923e-a3d61e9e921e",
+                            "parent_id": "",
+                            "name": "Уведомления по SMS",
+                            "route": "settings/notification/sms",
+                            "description": "Уведомления по SMS",
+                            "is_active": false,
+                            "slug": "sms-notification"
+                        },
+                        {
+                            "id": "235408fb-9772-4d94-ae2f-949ce603fd51",
+                            "parent_id": "",
+                            "name": "Уведомления по почте ",
+                            "route": "settings/notification/email",
+                            "description": "Уведомления по почте ",
+                            "is_active": false,
+                            "slug": "mail-notification"
+                        }
+                    ],
+                    "is_active": false,
+                    "slug": "notifications"
+                },
+                {
+                    "id": "ae8659f5-7b92-4c0d-a889-f2a356165bb1",
+                    "parent_id": "",
+                    "section_id": "",
+                    "name": "Компания",
+                    "route": "settings/company",
+                    "description": "",
+                    "sequence_number": 0,
+                    "children": [
+                        {
+                            "id": "cf22a739-abab-4a9c-afbe-f5f367a9c877",
+                            "parent_id": "",
+                            "name": "Возможность редактирования настроек Компании",
+                            "route": "settings/company",
+                            "description": "Возможность редактирования настроек Компании",
+                            "is_active": false,
+                            "slug": "company-edit"
+                        }
+                    ],
+                    "is_active": false,
+                    "slug": "settings-company"
+                },
+                {
+                    "id": "85740534-a567-4efc-803b-1f9d08c35389",
+                    "parent_id": "",
+                    "section_id": "",
+                    "name": "Магазины",
+                    "route": "settings/shop",
+                    "description": "",
+                    "sequence_number": 0,
+                    "children": [
+                        {
+                            "id": "5d4bbb00-227e-4241-b331-2d11c8290477",
+                            "parent_id": "",
+                            "name": "Возможность редактирования магазинов",
+                            "route": "settings/shop/:id",
+                            "description": "Возможность редактирования магазинов",
+                            "is_active": false,
+                            "slug": "shop-edit"
+                        },
+                        {
+                            "id": "ea71f2f8-12b7-478c-9bde-ac0799d62d7a",
+                            "parent_id": "",
+                            "name": "Возможность просмотра списка магазинов",
+                            "route": "settings/shop",
+                            "description": "Возможность просмотра списка магазинов",
+                            "is_active": false,
+                            "slug": "shop-list"
+                        },
+                        {
+                            "id": "0ac8b254-958f-4cb9-9f44-dffa91786018",
+                            "parent_id": "",
+                            "name": "Возможность создания нового магазина",
+                            "route": "settings/shop/create",
+                            "description": "Возможность создания нового магазина",
+                            "is_active": false,
+                            "slug": "shop-create"
+                        },
+                        {
+                            "id": "a6c40b2d-7b43-4b89-acc1-bf79708697f5",
+                            "parent_id": "",
+                            "name": "Возможность удаления магазинов",
+                            "route": "settings/shop/delete/:id",
+                            "description": "Возможность удаления магазинов",
+                            "is_active": false,
+                            "slug": "shop-delete"
+                        }
+                    ],
+                    "is_active": false,
+                    "slug": "settings-shop"
+                },
+                {
+                    "id": "4778631c-abe1-4730-94d1-5655dfa6c5ee",
+                    "parent_id": "",
+                    "section_id": "",
+                    "name": "Кассы",
+                    "route": "settings/cashbox",
+                    "description": "",
+                    "sequence_number": 0,
+                    "children": [
+                        {
+                            "id": "f1675e74-4750-4213-95fe-b2d7f61ae01b",
+                            "parent_id": "",
+                            "name": "Возможность редактирования касс",
+                            "route": "settings/cashbox/:id",
+                            "description": "Возможность редактирования касс",
+                            "is_active": false,
+                            "slug": "cashbox-edit"
+                        },
+                        {
+                            "id": "f6797b6d-4c48-427e-a98d-bfaa9415152b",
+                            "parent_id": "",
+                            "name": "Возможность просмотра списков касс",
+                            "route": "settings/cashbox",
+                            "description": "Возможность просмотра списков касс",
+                            "is_active": false,
+                            "slug": "cashbox-list"
+                        },
+                        {
+                            "id": "a174fb9d-e83c-4dcd-a632-2fad82e06e66",
+                            "parent_id": "",
+                            "name": "Возможность удаления касс",
+                            "route": "settings/cashbox/delete/:id",
+                            "description": "Возможность удаления касс",
+                            "is_active": false,
+                            "slug": "cashbox-delete"
+                        },
+                        {
+                            "id": "94adb6d1-e7b1-4ef3-bd00-f5a28aa2b233",
+                            "parent_id": "",
+                            "name": "Возможность создания новой кассы",
+                            "route": "settings/cashbox/create",
+                            "description": "Возможность создания новой кассы",
+                            "is_active": false,
+                            "slug": "cashbox-create"
+                        }
+                    ],
+                    "is_active": false,
+                    "slug": "settings-cashbox"
+                },
+                {
+                    "id": "4513755c-a53c-4491-ab97-6140e66a722d",
+                    "parent_id": "",
+                    "section_id": "",
+                    "name": "Чеки",
+                    "route": "settings/cheque",
+                    "description": "",
+                    "sequence_number": 0,
+                    "children": [
+                        {
+                            "id": "f54cd34b-418d-4b07-9d1b-875d8f53f5cd",
+                            "parent_id": "",
+                            "name": "Возможность удаления чеков ",
+                            "route": "settings/cheque/delete/:id",
+                            "description": "Возможность удаления чеков ",
+                            "is_active": false,
+                            "slug": "cheque-delete"
+                        },
+                        {
+                            "id": "ee1d1439-7555-4c2a-9440-f667fdfacbce",
+                            "parent_id": "",
+                            "name": "Возможность редактирования чека",
+                            "route": "settings/cheque/edit/:id",
+                            "description": "Возможность редактирования чека",
+                            "is_active": false,
+                            "slug": "cheque-edit"
+                        },
+                        {
+                            "id": "979131d7-2f86-491d-92b2-b0ca5f87c26d",
+                            "parent_id": "",
+                            "name": "Возможность просмотра списка чеков",
+                            "route": "settings/cheque",
+                            "description": "Возможность просмотра списка чеков",
+                            "is_active": false,
+                            "slug": "cheque-list"
+                        },
+                        {
+                            "id": "8a1fbc00-249f-4dae-9b53-11da7e6b5099",
+                            "parent_id": "",
+                            "name": "Возможность создания нового чека",
+                            "route": "settings/cheque/create",
+                            "description": "Возможность создания нового чека",
+                            "is_active": false,
+                            "slug": "cheque-create"
+                        }
+                    ],
+                    "is_active": false,
+                    "slug": "settings-cheque"
+                },
+                {
+                    "id": "043ec528-b8a8-4ce4-a74b-67557182ade8",
+                    "parent_id": "",
+                    "section_id": "",
+                    "name": "Валюты и оплаты",
+                    "route": "settings/payment",
+                    "description": "",
+                    "sequence_number": 0,
+                    "children": [
+                        {
+                            "id": "25bd29e2-9f0d-4c19-9456-3b1f271e3a33",
+                            "parent_id": "",
+                            "name": "Возможность редактирования типа оплаты ",
+                            "route": "payment-type/edit",
+                            "description": "Возможность редактирования типа оплаты ",
+                            "is_active": false,
+                            "slug": "payment-type-edit"
+                        },
+                        {
+                            "id": "68be699e-2d12-4885-bde0-ccc124521d37",
+                            "parent_id": "",
+                            "name": "Возможность просмотра списков валют",
+                            "route": "settings/payment/currency",
+                            "description": "Возможность просмотра списков валют",
+                            "is_active": false,
+                            "slug": "currency-list"
+                        },
+                        {
+                            "id": "8a89e437-0241-44e3-9438-47d76976e1d7",
+                            "parent_id": "",
+                            "name": "Возможность удаления валюты",
+                            "route": "settings/payment/currency/delete",
+                            "description": "Возможность удаления валюты",
+                            "is_active": false,
+                            "slug": "currency-delete"
+                        },
+                        {
+                            "id": "09f6f514-048b-483b-8d7d-8fd0da6e8b27",
+                            "parent_id": "",
+                            "name": "Возможность добавления новой валюты",
+                            "route": "settings/payment/add",
+                            "description": "Возможность добавления новой валюты",
+                            "is_active": false,
+                            "slug": "currency-create"
+                        },
+                        {
+                            "id": "6f013dbe-3820-4338-a3ec-7383ca0f3322",
+                            "parent_id": "",
+                            "name": "Возможность изменения курса валют",
+                            "route": "settings/currency/edit",
+                            "description": "Возможность изменения курса валют",
+                            "is_active": false,
+                            "slug": "currency-edit"
+                        },
+                        {
+                            "id": "5a086878-d7b6-48b2-b003-4f84536cacb3",
+                            "parent_id": "",
+                            "name": "Возможность просмотра типов оплат",
+                            "route": "settings/payment/types",
+                            "description": "Возможность просмотра типов оплат",
+                            "is_active": false,
+                            "slug": "payment-types"
+                        },
+                        {
+                            "id": "d5ad04b4-28d2-4b31-8d52-f32375e66afc",
+                            "parent_id": "",
+                            "name": "Возможность удаления типа оплаты",
+                            "route": "payment-type/delete",
+                            "description": "Возможность удаления типа оплаты",
+                            "is_active": false,
+                            "slug": "payment-type-delete"
+                        },
+                        {
+                            "id": "e1a41797-1629-46f0-977f-9b2536d89ed2",
+                            "parent_id": "",
+                            "name": "Возможность добавления типа оплаты ",
+                            "route": "payment-type/create",
+                            "description": "Возможность добавления типа оплаты ",
+                            "is_active": false,
+                            "slug": "payment-type-create"
+                        }
+                    ],
+                    "is_active": false,
+                    "slug": "settings-payment"
+                },
+                {
+                    "id": "4dc236c8-6c6e-4b08-a960-8b7cb13e4666",
+                    "parent_id": "",
+                    "section_id": "",
+                    "name": "Тарифы",
+                    "route": "settings/plan",
+                    "description": "",
+                    "sequence_number": 0,
+                    "children": [
+                        {
+                            "id": "6b4c90ff-b406-4be5-a070-da7b40328819",
+                            "parent_id": "",
+                            "name": "Просмотр информации о тарифе",
+                            "route": "settings/plan",
+                            "description": "",
+                            "is_active": false,
+                            "slug": "plan-info"
+                        },
+                        {
+                            "id": "af4f827d-780d-4491-8de1-d157e56bb400",
+                            "parent_id": "",
+                            "name": "Просмотр информации об истории оплат",
+                            "route": "/plan-payment-history",
+                            "description": "",
+                            "is_active": false,
+                            "slug": "plan-payment-history"
+                        },
+                        {
+                            "id": "cc178185-6acd-47e4-9400-af217986992a",
+                            "parent_id": "",
+                            "name": "Просмотр информации об инвойсах",
+                            "route": "reports/plan-invoice",
+                            "description": "",
+                            "is_active": false,
+                            "slug": "plan-invoice"
+                        },
+                        {
+                            "id": "9bebe6ba-d7df-4491-b8ec-b96fa7280944",
+                            "parent_id": "",
+                            "name": "Возможность изменения тарифа",
+                            "route": "/plan-change",
+                            "description": "",
+                            "is_active": false,
+                            "slug": "plan-change"
+                        },
+                        {
+                            "id": "354b9faa-5180-44e5-8744-60238d45c40c",
+                            "parent_id": "",
+                            "name": "Возможность пополнения баланса",
+                            "route": "/plan-payment",
+                            "description": "",
+                            "is_active": false,
+                            "slug": "plan-payment"
+                        }
+                    ],
+                    "is_active": false,
+                    "slug": "plan"
+                },
+                {
+                    "id": "958778fa-ef83-49fb-b944-419132dd75d8",
+                    "parent_id": "",
+                    "section_id": "",
+                    "name": "Приложения",
+                    "route": "settings/applications",
+                    "description": "Модуль приложения для подключения интеграций",
+                    "sequence_number": 0,
+                    "children": [],
+                    "is_active": false,
+                    "slug": "settings-applications"
+                }
+            ]
+        },
+        {
+            "id": "19b01a2d-e91e-4e45-bb74-b832405d8cab",
+            "key": "management",
+            "sequence_number": 7,
+            "permissions": [
+                {
+                    "id": "1a243539-b677-4b70-8bbf-93f87975845b",
+                    "parent_id": "",
+                    "section_id": "",
+                    "name": "Автосинхронизация движений",
+                    "route": "management/product-movements-autofix",
+                    "description": "Автосинхронизация движений",
+                    "sequence_number": 0,
+                    "children": [],
+                    "is_active": false,
+                    "slug": "product-movements-autofix"
+                },
+                {
+                    "id": "f1678fb3-ecbe-49a6-950f-6cfb86756472",
+                    "parent_id": "",
+                    "section_id": "",
+                    "name": "Сотрудники",
+                    "route": "management/employees",
+                    "description": "Management",
+                    "sequence_number": 0,
+                    "children": [
+                        {
+                            "id": "e6955a19-f0e2-462f-8e93-eb61e4dd4b9e",
+                            "parent_id": "",
+                            "name": "Возможность создания новых сотрудников",
+                            "route": "management/employees/create",
+                            "description": "Возможность создания новых сотрудников",
+                            "is_active": false,
+                            "slug": "employee-create"
+                        },
+                        {
+                            "id": "29f71763-fe3f-4af5-b4d2-73c98531cd58",
+                            "parent_id": "",
+                            "name": "Возможность удаления сотрудников",
+                            "route": "management/employees/delete/:id",
+                            "description": "Возможность удаления сотрудников",
+                            "is_active": false,
+                            "slug": "employee-delete"
+                        },
+                        {
+                            "id": "434dcea4-574c-4f0f-932f-474c9a5983a9",
+                            "parent_id": "",
+                            "name": "Возможность редактирования сотрудника",
+                            "route": "user/{id}",
+                            "description": "Возможность редактирования сотрудника",
+                            "is_active": false,
+                            "slug": "employee-edit"
+                        },
+                        {
+                            "id": "ee862482-ea1f-464f-b765-375ceb86512b",
+                            "parent_id": "",
+                            "name": "Возможность блокирования сотрудников",
+                            "route": "management/employees/block/:id",
+                            "description": "Возможность блокирования сотрудников",
+                            "is_active": false,
+                            "slug": "employee-block"
+                        },
+                        {
+                            "id": "dd85ad8a-7fe5-401d-a990-1b5e576eec08",
+                            "parent_id": "",
+                            "name": "Возможность просмотра списка сотрудников",
+                            "route": "management/employees",
+                            "description": "Возможность просмотра списка сотрудников",
+                            "is_active": false,
+                            "slug": "employee-list"
+                        }
+                    ],
+                    "is_active": false,
+                    "slug": "employees"
+                },
+                {
+                    "id": "2127a4a0-eda5-4ec0-b736-ee2eb255873f",
+                    "parent_id": "",
+                    "section_id": "",
+                    "name": "Роли",
+                    "route": "management/roles",
+                    "description": "",
+                    "sequence_number": 0,
+                    "children": [
+                        {
+                            "id": "b4ab0d5c-e9bc-4f60-9cf3-f9ce771e612d",
+                            "parent_id": "",
+                            "name": "Возможность просмотра списка ролей",
+                            "route": "management/roles",
+                            "description": "Возможность просмотра списка ролей",
+                            "is_active": false,
+                            "slug": "role-list"
+                        },
+                        {
+                            "id": "b2b25861-0cfe-420c-893f-78eaac9db29b",
+                            "parent_id": "",
+                            "name": "Возможность удаления роли ",
+                            "route": "management/roles/delete",
+                            "description": "Возможность удаления роли ",
+                            "is_active": false,
+                            "slug": "management-role-delete"
+                        },
+                        {
+                            "id": "0597c8c4-e31d-4a91-982f-bfbc9897b16c",
+                            "parent_id": "",
+                            "name": "Возможность редактирования роли",
+                            "route": "management/roles/:id",
+                            "description": "Возможность редактирования роли",
+                            "is_active": false,
+                            "slug": "role-edit"
+                        },
+                        {
+                            "id": "1721db3c-ad09-4303-a0c1-06b7fb8a6fad",
+                            "parent_id": "",
+                            "name": "Возможность создания новой роли",
+                            "route": "management/roles/create",
+                            "description": "Возможность создания новой роли",
+                            "is_active": false,
+                            "slug": "role-create"
+                        }
+                    ],
+                    "is_active": false,
+                    "slug": "roles"
+                }
+            ]
+        },
+        {
+            "id": "028b7298-cf0e-4714-9141-c3025a6d42a2",
+            "key": "dashboard",
+            "sequence_number": 8,
+            "permissions": [
+                {
+                    "id": "fc3f810f-8cdd-4429-927b-70f934791664",
+                    "parent_id": "",
+                    "section_id": "",
+                    "name": "Просмотр дашборда по продажам магазина",
+                    "route": "dashboard/access",
+                    "description": "Просмотр дашборда по продажам магазина, к которому привязан",
+                    "sequence_number": 0,
+                    "children": [],
+                    "is_active": true,
+                    "slug": "dashboard-orders"
+                }
+            ]
+        },
+        {
+            "id": "dea657b7-804f-4703-bd99-be7ec6a07144",
+            "key": "epos",
+            "sequence_number": 9,
+            "permissions": [
+                {
+                    "id": "02d2b5e1-64d9-4ef3-9d49-8849d7d95183",
+                    "parent_id": "",
+                    "section_id": "",
+                    "name": "Автоматический фильтр для транзакций сделанных через E-POS",
+                    "route": "orders-epos",
+                    "description": "Автоматический фильтр для транзакции сделанные через E-POS",
+                    "sequence_number": 0,
+                    "children": [],
+                    "is_active": false,
+                    "slug": "orders-epos"
+                }
+            ]
+        }
+    ],
+    "user_id": ""
+}
